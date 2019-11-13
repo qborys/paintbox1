@@ -246,7 +246,6 @@ line-height: 100px;
 /* pb */
 .section_img  {
 text-align: center;  
-padding:10%;
 }
 .section_img img {
 border-radius: 15%;
@@ -584,6 +583,9 @@ div.thx {
   .flex-reverse{
     flex-direction: row-reverse;
   }
+  .section_img  {
+    padding:10%;
+    }
 
 }
 
