@@ -246,7 +246,8 @@ line-height: 100px;
 }
 /* pb */
 .section_img  {
-text-align: center;  
+text-align: center;
+padding: 10%;  
 }
 .section_img img {
 border-radius: 15%;
