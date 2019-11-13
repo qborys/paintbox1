@@ -255,6 +255,10 @@ border-radius: 15%;
 width:100%;
 }
 
+.spa_txt{
+  margin-top:10px;
+}
+
 .team_img img{
   width:100%;
 }
@@ -269,6 +273,7 @@ width:100%;
 }
 
 .testimonial_txt {text-align:center}
+
 
 
 /* MARKETING CONTENT
