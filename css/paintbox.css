@@ -17,19 +17,10 @@ footer {
   margin-top: 60px;
 }
 .first-slide {
-  background-image: url(../img/galeria/galeria_3.jpg);
-  background-size: cover;
-  background-position: 0% 70%;
-  height: 100%;
+
 }
 .second-slide {
-  /* background-image: url(../img/paintbox_manicure_carousel.png); */
-  /*background-size: 1200px;*/
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% 0%;
-  /* height: 100%; */
-  background-color: rgb(255, 255, 255);
+
 }
 
 
