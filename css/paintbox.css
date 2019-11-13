@@ -176,10 +176,11 @@ li.zolty a, .zolty {
 
 /* PB */
 .contact_menu{
+display:none;
 float:right;
 color: var(--main-color-normal);
 font-size: 16px;
-line-height: 50px;
+line-height: 40px;
 }
 .contact_menu p{
   float:left;  
@@ -187,7 +188,7 @@ line-height: 50px;
 .contact_menu img{
   float:left;
   width: 30px;
-  margin: 10px 5px;
+  margin: 5px 5px 0 0;
 }
 .contact_menu a{
   color: var(--main-color-normal);
@@ -603,6 +604,7 @@ div.thx {
     padding:10%;
     }
     .contact_menu{
+      display:block;
       font-size: 24px;
       line-height: 60px;
       }
@@ -610,7 +612,7 @@ div.thx {
       .contact_menu img{
 
         width: 40px;
-        margin: 10px 5px;
+        margin: 10px 5px;}
 
 }
 
