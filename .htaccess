@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^paintbox.pl$ 
+RewriteRule ^(.*) http://www.paintbox.pl/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*\/index\.html\ HTTP/
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*\/cennik-manicure-pedicure\.html\ HTTP/
+RewriteRule ^(.*) /cennik.html [R=301,L]
+
+SetEnv PHP_VER 4

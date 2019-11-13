@@ -1,0 +1,794 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-family: 'Signika', sans-serif;
+}
+footer {
+  margin-top: 60px;
+}
+.first-slide {
+  background-image: url(../img/galeria/galeria_3.jpg);
+  background-size: cover;
+  background-position: 0% 70%;
+  height: 100%;
+}
+.second-slide {
+  background-image: url(../img/paintbox_swieta_cover.jpg);
+  /*background-size: 1200px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 16%;
+  height: 100%;
+  background-color: #F7F4ED;
+}
+.third-slide {
+  background-image: url(../img/paintbox_henna_top.jpg);
+  /*background-size: 1200px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+  height: 100%;
+  background-color: #F7F4ED;
+}
+
+.carousel h1 {
+  font-weight: bold;
+}
+.carousel-caption {
+  margin-bottom: 60px;
+}
+.carousel a:hover {
+  text-decoration: none;
+}
+
+.carousel-caption h1.bialy {
+  text-shadow: 0 2px 9px rgba(50,0,0,.9);
+}
+
+.smaller-text {
+  font-size: 13px;
+}
+
+.spacer {
+  position: relative;
+  overflow: hidden;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+li.fiolet a, .fiolet {
+  color: #7F3E98;
+}
+li.turkus a, .turkus {
+  color: #01AAAD;
+}
+li.roz a, .roz {
+  color: #ED207B;
+}
+li.zolty a, .zolty {
+  color: #777;
+}
+.jasnyzolty {
+  color: #FFDB00;
+}
+.szary {
+  color: #6D6E72;
+}
+.black {
+  color: #000000;
+}
+.bialy {
+  color: #FFFFFF;
+}
+.bialy_shadow {
+  color: #FFFFFF;
+  text-shadow: 0 1px 20px rgba(0,0,0,.9);
+}
+.zolty_odcien {
+  color: #FFAA01;
+}
+
+.navbar-toggle {
+  border-color: #ddd;
+  background-color: #ddd;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #888;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.paintboxlogo {
+  display: none;
+}
+.smalllogo {
+  display: block;
+  float: left;
+}
+.navbar-nav a {
+  color: #000000;
+}
+.smalllogo img {
+  width: 200px;
+}
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  text-transform: uppercase;
+}
+.container>.navbar-header {
+  margin-top: 10px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+
+.carousel {
+  height: 500px;
+}
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4, .col-lg-6, .homepage .col-md-6 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p, .marketing .col-lg-6 p, .homepage .col-md-6 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.marketing .uslugi .col-md-7 p {
+  font-size: 13px;
+}
+
+.marketing .uslugi p {
+  font-size: 13px;
+}
+
+.marketing .uslugi p.lead {
+  font-size: 14px;
+}
+
+.marketing .imprezyokolicznosciowe p {
+  font-size: 21px;
+}
+.marketing .imprezyokolicznosciowe p.lead {
+  font-size: 21px;
+}
+
+.uslugi h4 {
+  font-weight: bold;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 30px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.featurette-image {
+  max-width: 80%;
+}
+.mainsection {
+  margin-top: 100px;
+}
+.team p, .promotion p, .kontakt p, .kontakt label{
+  font-size: 13px;
+}
+.kontakt i.fa-phone,  .kontakt abbr{
+  font-size: 14px;
+}
+
+.promotion p.lead {
+  font-size: 14px;
+  color: #777;
+}
+
+.opinie footer {
+  margin-top: 15px;
+  font-size: 70%;
+}
+
+.opinie p {
+  font-size: 15px;
+  font-style: italic;
+}
+
+div.pakiet {
+  padding: 20px;
+  min-width: 100px;
+  min-height: 250px;
+  background-color: #6D6E72;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+div.pakiet .name {
+  font-size: 64px;
+}
+
+div.pakiet .desc {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#gmap_canvas {
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+}
+
+#gmap_canvas img{
+  max-width: none!important;
+  background: none!important
+}
+
+table tr td:last-child, table tr th:last-child, 
+table tr td:nth-last-child(2), table tr th:nth-last-child(2) {
+  text-align: right;
+  font-size: 13px;
+}
+table tr td:last-child {
+  font-size: 14px;
+}
+
+.enflag {
+  width: 24px;
+  height: 16px;
+  border: 1px solid;
+  margin-right: 6px;
+  margin-bottom: 2px;
+}
+
+table tr td.cennik_sub {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+.polecaja {
+  font-size: 52px;
+}
+
+.polecaja a:link, .polecaja a:hover, .polecaja a:visited, .polecaja a:active {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+.jj {
+  text-align: right;
+}
+
+.subjj {
+  font-size: 13px;
+}
+
+.jjcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.ancontainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  width: 228px;
+}
+
+div#recommendedby {
+  height: 320px;
+}
+
+#recommendedby div {
+  height: 280px;
+  background-color: #fff;
+}
+
+#recommendedby .carousel-indicators li {
+  background-color: #fff;
+  border: 1px solid #5a5a5a;
+  width: 12px;
+  height: 12px;
+  margin: 0px;
+}
+
+#recommendedby .carousel-indicators .active {
+  background-color: #5a5a5a;
+}
+
+#recommendedby .carousel-control {
+  background-color: #fff;
+  background-image: none;
+}
+
+#recommendedby .carousel-control .icon-prev, #recommendedby .carousel-control .icon-next {
+  top: 37%;
+}
+
+div.thx {
+  font-size: 28px;
+  text-align: center;
+}
+
+.ekskluzywny {
+  padding-top: 20px;
+}
+
+.list-social-icons>li>a.fb {
+  color: #3a5795;
+}
+
+.list-social-icons>li>a.in {
+  color: #000;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .nav>li>a {
+    padding-right: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+
+  .navbar-wrapper {
+    margin-top: 100px;
+  }
+  .navbar-wrapper .container {
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    width: 100%;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .featurette-divider {
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
+  }
+  .navbar-brand {
+    margin-top: -95px;
+  }
+  .paintboxlogo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  .paintboxlogo img {
+    width: 200px;
+    height: 200px;
+  }
+  .smalllogo {
+    display: none;
+  }
+  .mainsection {
+    margin-top: 350px;
+  }
+  .mainsection .featurette-image {
+    margin-top: 20px;
+  }
+  .aboutus .thumbnail {
+    border: 0px;
+  }
+
+  .uslugi .col-md-6 {
+    margin-bottom: 25px;
+    padding-right: 50px;
+  }
+
+  .iwona {
+    margin-top: 60px;
+  }
+
+  .navbar-nav>li>a.fb {
+    padding-bottom: 0px; 
+    padding-top: 4px;
+    padding-right: 4px;
+    color: #3a5795;
+  }
+
+  .navbar-nav>li>a.in {
+    padding-bottom: 0px; 
+    padding-top: 4px;
+    padding-left: 4px;
+  }
+
+  .polecaja {
+    font-size: 80px;
+    margin-top: 55px;
+  }
+  
+  .jjcontainer {
+    margin-left: 125px;
+    margin-top: 0px;
+  }
+
+  .ancontainer {
+    width: 250px;
+  }
+
+  .celebrity-second-row {
+   margin-top: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-top: -115px;
+  }
+  .navbar-wrapper .container {
+    width: 100%;
+  }
+  .paintboxlogo {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .paintboxlogo img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 1170px) {
+  .navbar-wrapper .container {
+    width: 1170px;
+  }
+}
+/**************** BUTTONS *****************/
+
+.btn-zolty {
+  color: #FFFFFF;
+  background-color: #777;
+  border-color: #777;
+}
+.btn-zolty:hover, .btn-zolty:focus, .btn-zolty:active, .btn-zolty.active, .open .dropdown-toggle.btn-zolty {
+  color: #FFFFFF;
+  background-color: #4E4A54;
+  border-color: #FFFFFF;
+}
+.btn-zolty:active, .btn-zolty.active, .open .dropdown-toggle.btn-zolty {
+  background-image: none;
+}
+.btn-zolty.disabled, .btn-zolty[disabled], fieldset[disabled] .btn-zolty, .btn-zolty.disabled:hover, .btn-zolty[disabled]:hover, fieldset[disabled] .btn-zolty:hover, .btn-zolty.disabled:focus, .btn-zolty[disabled]:focus, fieldset[disabled] .btn-zolty:focus, .btn-zolty.disabled:active, .btn-zolty[disabled]:active, fieldset[disabled] .btn-zolty:active, .btn-zolty.disabled.active, .btn-zolty[disabled].active, fieldset[disabled] .btn-zolty.active {
+  background-color: #777;
+  border-color: #777;
+}
+.btn-zolty .badge {
+  color: #777;
+  background-color: #FFF;
+}
+/* TURKUS */
+
+.btn-turkus {
+  color: #FFFFFF;
+  background-color: #01AAAD;
+  border-color: #FFFFFF;
+}
+.btn-turkus:hover, .btn-turkus:focus, .btn-turkus:active, .btn-turkus.active, .open .dropdown-toggle.btn-turkus {
+  color: #FFFFFF;
+  background-color: #018BAD;
+  border-color: #FFFFFF;
+}
+.btn-turkus:active, .btn-turkus.active, .open .dropdown-toggle.btn-turkus {
+  background-image: none;
+}
+.btn-turkus.disabled, .btn-turkus[disabled], fieldset[disabled] .btn-turkus, .btn-turkus.disabled:hover, .btn-turkus[disabled]:hover, fieldset[disabled] .btn-turkus:hover, .btn-turkus.disabled:focus, .btn-turkus[disabled]:focus, fieldset[disabled] .btn-turkus:focus, .btn-turkus.disabled:active, .btn-turkus[disabled]:active, fieldset[disabled] .btn-turkus:active, .btn-turkus.disabled.active, .btn-turkus[disabled].active, fieldset[disabled] .btn-turkus.active {
+  background-color: #01AAAD;
+  border-color: #FFFFFF;
+}
+.btn-turkus .badge {
+  color: #01AAAD;
+  background-color: #FFFFFF;
+}
+/* fiolet */
+
+.btn-fiolet {
+  color: #FFFFFF;
+  background-color: #7F3E98;
+  border-color: #FFFFFF;
+}
+.btn-fiolet:hover, .btn-fiolet:focus, .btn-fiolet:active, .btn-fiolet.active, .open .dropdown-toggle.btn-fiolet {
+  color: #FFFFFF;
+  background-color: #623E98;
+  border-color: #FFFFFF;
+}
+.btn-fiolet:active, .btn-fiolet.active, .open .dropdown-toggle.btn-fiolet {
+  background-image: none;
+}
+.btn-fiolet.disabled, .btn-fiolet[disabled], fieldset[disabled] .btn-fiolet, .btn-fiolet.disabled:hover, .btn-fiolet[disabled]:hover, fieldset[disabled] .btn-fiolet:hover, .btn-fiolet.disabled:focus, .btn-fiolet[disabled]:focus, fieldset[disabled] .btn-fiolet:focus, .btn-fiolet.disabled:active, .btn-fiolet[disabled]:active, fieldset[disabled] .btn-fiolet:active, .btn-fiolet.disabled.active, .btn-fiolet[disabled].active, fieldset[disabled] .btn-fiolet.active {
+  background-color: #7F3E98;
+  border-color: #FFFFFF;
+}
+.btn-fiolet .badge {
+  color: #7F3E98;
+  background-color: #FFFFFF;
+}
+/* roz */
+
+.btn-roz {
+  color: #FFFFFF;
+  background-color: #ED207B;
+  border-color: #FFFFFF;
+}
+.btn-roz:hover, .btn-roz:focus, .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
+  color: #FFFFFF;
+  background-color: #ED20B6;
+  border-color: #FFFFFF;
+}
+.btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
+  background-image: none;
+}
+.btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
+  background-color: #ED207B;
+  border-color: #FFFFFF;
+}
+.btn-roz .badge {
+  color: #ED207B;
+  background-color: #FFFFFF;
+}
+
+/* bialy */
+.btn-bialy { 
+  color: #ED207B; 
+  background-color: #FFFFFF; 
+  border-color: #FFFFFF; 
+}
+ 
+.btn-bialy:hover, 
+.btn-bialy:focus, 
+.btn-bialy:active, 
+.btn-bialy.active, 
+.open .dropdown-toggle.btn-bialy { 
+  color: #ED207B; 
+  background-color: #FFF0F7; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-bialy:active, 
+.btn-bialy.active, 
+.open .dropdown-toggle.btn-bialy { 
+  background-image: none; 
+} 
+ 
+.btn-bialy.disabled, 
+.btn-bialy[disabled], 
+fieldset[disabled] .btn-bialy, 
+.btn-bialy.disabled:hover, 
+.btn-bialy[disabled]:hover, 
+fieldset[disabled] .btn-bialy:hover, 
+.btn-bialy.disabled:focus, 
+.btn-bialy[disabled]:focus, 
+fieldset[disabled] .btn-bialy:focus, 
+.btn-bialy.disabled:active, 
+.btn-bialy[disabled]:active, 
+fieldset[disabled] .btn-bialy:active, 
+.btn-bialy.disabled.active, 
+.btn-bialy[disabled].active, 
+fieldset[disabled] .btn-bialy.active { 
+  background-color: #FFFFFF; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-bialy .badge { 
+  color: #FFFFFF; 
+  background-color: #ED207B; 
+}
+
+/* bialo szary */
+.btn-bialo-szary { 
+  color: #777; 
+  background-color: #FFFFFF; 
+  border-color: #FFFFFF; 
+}
+ 
+.btn-bialo-szary:hover, 
+.btn-bialo-szary:focus, 
+.btn-bialo-szary:active, 
+.btn-bialo-szary.active, 
+.open .dropdown-toggle.btn-bialo-szary { 
+  color: #777; 
+  background-color: #C7C7C7; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-bialo-szary:active, 
+.btn-bialo-szary.active, 
+.open .dropdown-toggle.btn-bialo-szary { 
+  background-image: none; 
+} 
+ 
+.btn-bialo-szary.disabled, 
+.btn-bialo-szary[disabled], 
+fieldset[disabled] .btn-bialo-szary, 
+.btn-bialo-szary.disabled:hover, 
+.btn-bialo-szary[disabled]:hover, 
+fieldset[disabled] .btn-bialo-szary:hover, 
+.btn-bialo-szary.disabled:focus, 
+.btn-bialo-szary[disabled]:focus, 
+fieldset[disabled] .btn-bialo-szary:focus, 
+.btn-bialo-szary.disabled:active, 
+.btn-bialo-szary[disabled]:active, 
+fieldset[disabled] .btn-bialo-szary:active, 
+.btn-bialo-szary.disabled.active, 
+.btn-bialo-szary[disabled].active, 
+fieldset[disabled] .btn-bialo-szary.active { 
+  background-color: #FFFFFF; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-bialo-szary .badge { 
+  color: #FFFFFF; 
+  background-color: #C7C7C7; 
+}
+
+/* button czerwono-bialy */
+.btn-czerwony { 
+  color: #E60E0E; 
+  background-color: #FFFFFF; 
+  border-color: #E0E0E0; 
+} 
+ 
+.btn-czerwony:hover, 
+.btn-czerwony:focus, 
+.btn-czerwony:active, 
+.btn-czerwony.active, 
+.open .dropdown-toggle.btn-czerwony { 
+  color: #E60E0E; 
+  background-color: #F7E4E6; 
+  border-color: #E0E0E0; 
+} 
+ 
+.btn-czerwony:active, 
+.btn-czerwony.active, 
+.open .dropdown-toggle.btn-czerwony { 
+  background-image: none; 
+} 
+ 
+.btn-czerwony.disabled, 
+.btn-czerwony[disabled], 
+fieldset[disabled] .btn-czerwony, 
+.btn-czerwony.disabled:hover, 
+.btn-czerwony[disabled]:hover, 
+fieldset[disabled] .btn-czerwony:hover, 
+.btn-czerwony.disabled:focus, 
+.btn-czerwony[disabled]:focus, 
+fieldset[disabled] .btn-czerwony:focus, 
+.btn-czerwony.disabled:active, 
+.btn-czerwony[disabled]:active, 
+fieldset[disabled] .btn-czerwony:active, 
+.btn-czerwony.disabled.active, 
+.btn-czerwony[disabled].active, 
+fieldset[disabled] .btn-czerwony.active { 
+  background-color: #FFFFFF; 
+  border-color: #E0E0E0; 
+} 
+ 
+.btn-czerwony .badge { 
+  color: #FFFFFF; 
+  background-color: #E60E0E; 
+}
+
+.btn-zolty-odcien { 
+  color: #ffffff; 
+  background-color: #FFAA01; 
+  border-color: #FFBD3A; 
+} 
+ 
+.btn-zolty-odcien:hover, 
+.btn-zolty-odcien:focus, 
+.btn-zolty-odcien:active, 
+.btn-zolty-odcien.active, 
+.open .dropdown-toggle.btn-zolty-odcien { 
+  color: #ffffff; 
+  background-color: #9C6800; 
+  border-color: #FFBD3A; 
+} 
+ 
+.btn-zolty-odcien:active, 
+.btn-zolty-odcien.active, 
+.open .dropdown-toggle.btn-zolty-odcien { 
+  background-image: none; 
+} 
+ 
+.btn-zolty-odcien.disabled, 
+.btn-zolty-odcien[disabled], 
+fieldset[disabled] .btn-zolty-odcien, 
+.btn-zolty-odcien.disabled:hover, 
+.btn-zolty-odcien[disabled]:hover, 
+fieldset[disabled] .btn-zolty-odcien:hover, 
+.btn-zolty-odcien.disabled:focus, 
+.btn-zolty-odcien[disabled]:focus, 
+fieldset[disabled] .btn-zolty-odcien:focus, 
+.btn-zolty-odcien.disabled:active, 
+.btn-zolty-odcien[disabled]:active, 
+fieldset[disabled] .btn-zolty-odcien:active, 
+.btn-zolty-odcien.disabled.active, 
+.btn-zolty-odcien[disabled].active, 
+fieldset[disabled] .btn-zolty-odcien.active { 
+  background-color: #FFAA01; 
+  border-color: #FFBD3A; 
+} 
+ 
+.btn-zolty-odcien .badge { 
+  color: #FFAA01; 
+  background-color: #ffffff; 
+}
