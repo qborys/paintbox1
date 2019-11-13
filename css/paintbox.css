@@ -264,9 +264,7 @@ width:100%;
   font-weight: normal;
 }
 .marketing .col-lg-4 p, .marketing .col-lg-6 p, .homepage .col-md-6 p {
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .marketing .uslugi .col-md-7 p {
