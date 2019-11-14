@@ -92,6 +92,7 @@ footer {
 .container_gallery {
   position: relative;
   display:flex;
+  flex-direction: column;
   /* background: black; */
   margin:50px 0px;
 }
@@ -184,8 +185,8 @@ footer {
   display:flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  align-content: space-between;
-  justify-content: space-between;
+  align-content: space-around;
+  justify-content: space-around;
 }
 
 
@@ -723,7 +724,10 @@ div.thx {
         width: 40px;
         margin: 10px 5px;}
 
+    .container_gallery {
+        flex-direction: row;}
 }
+
 
 @media (min-width: 992px) {
   .navbar-brand {
