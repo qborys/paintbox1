@@ -89,12 +89,14 @@ footer {
 
     /* pbw3 */
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.container_gallery {
   position: relative;
+  display:flex;
 }
 
 /* Hide the images by default */
 .mySlides {
+  width:100%;
   display: none;
 }
 
@@ -149,16 +151,19 @@ footer {
   color: white;
 }
 
-.row:after {
+.column_flex:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+.column_flex {
+  width:50%;
+  /* flex-grow: 1; */
+}
+.column_flex img {
+  width: 100%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -171,7 +176,12 @@ footer {
   opacity: 1;
 }
 
-
+.nav_gallery
+{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
