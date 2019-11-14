@@ -92,6 +92,7 @@ footer {
 .container_gallery {
   position: relative;
   display:flex;
+  background: black;
 }
 
 /* Hide the images by default */
