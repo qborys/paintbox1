@@ -92,7 +92,8 @@ footer {
 .container_gallery {
   position: relative;
   display:flex;
-  background: black;
+  /* background: black; */
+  margin:50px 0px;
 }
 
 /* Hide the images by default */
@@ -160,7 +161,7 @@ footer {
 
 /* Six columns side by side */
 .column_flex {
-  width:50%;
+  width:30%;
   /* flex-grow: 1; */
 }
 .column_flex img {
@@ -182,6 +183,9 @@ footer {
   width:100%;
   display:flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 
