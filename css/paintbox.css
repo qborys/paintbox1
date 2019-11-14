@@ -113,7 +113,7 @@ footer {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 33%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -726,6 +726,11 @@ div.thx {
 
     .container_gallery {
         flex-direction: row;}
+        .prev,
+        .next {
+          display:none
+        }
+
 }
 
 
