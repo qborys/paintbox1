@@ -9,13 +9,16 @@
 }
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
   font-family: 'Signika', sans-serif;
   font-weight: 300;
 }
 footer {
+  color:white;
+  background-color: black;
   margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
 }
 .first-slide {
 
@@ -289,6 +292,7 @@ color: var(--main-color-normal);
 font-size: 16px;
 line-height: 40px;
 }
+
 .contact_menu p{
   float:left;  
 }
@@ -599,14 +603,14 @@ div.thx {
 
 .alert_frame{
 margin:40px 0px;
-background-color: var(--main-color-normal);
+background-color: black;
 
 
 }
 
 .alert_frame p{
 color:white;
-font-size: 30px;
+font-size: 22px;
 line-height: 60px;
 text-transform: uppercase;
 text-align: center;
