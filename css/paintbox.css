@@ -109,11 +109,11 @@ footer {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.container_gallery .prev,
+.container_gallery .next {
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  top: 50%;
   width: auto;
   padding: 16px;
   /* margin-top: -50px; */
@@ -126,14 +126,14 @@ footer {
 }
 
 /* Position the "next button" to the right */
-.next {
+.container_gallery .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.container_gallery .prev:hover,
+.container_gallery .next:hover {
   background-color:var(--main-color-normal);
 }
 a.next:hover, a.prev:hover {
@@ -731,22 +731,15 @@ div.thx {
         flex-direction: row;
       }
   
-    .prev,
-    .next {     
+      .container_gallery .prev,
+      .container_gallery .next {     
     /* display:none; */
     top: 50%;
     transform: translate(0%,-50%);
 }
 
-.next {
+.container_gallery .next {
   right: 50%;
-}
-
-
-
-
-
-
       }
 
 }
