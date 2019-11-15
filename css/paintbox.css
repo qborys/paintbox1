@@ -27,14 +27,14 @@ footer {
 
 
 .third-slide {
-  background-image: url(../img/paintbox_henna_top.jpg);
+  /* background-image: url(../img/paintbox_henna_top.jpg);
   /*background-size: 1200px;*/
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 65%;
   height: 100%;
-  background-color: #F7F4ED;
-}
+  background-color: #F7F4ED; */
+/* } */}
 
 .carousel h1 {
   font-size: 60px;
@@ -94,7 +94,7 @@ footer {
   display:flex;
   flex-direction: column;
   /* background: black; */
-  margin:50px 0px;
+  margin:20px 0px;
 }
 
 /* Hide the images by default */
@@ -355,7 +355,7 @@ a:hover{
 /* pb */
 .section_img  {
 text-align: center;
-padding: 10%;  
+padding: 20px;  
 }
 .section_img img {
 border-radius: 15%;
@@ -371,7 +371,7 @@ width:100%;
 }
 
 .testimonial_img{
-  padding: 10%;
+  padding: 20px;
 
 }
 .testimonial_img img{
@@ -597,6 +597,24 @@ div.thx {
 
 /* pb */
 
+.alert_frame{
+margin:40px 0px;
+background-color: var(--main-color-normal);
+
+
+}
+
+.alert_frame p{
+color:white;
+font-size: 30px;
+line-height: 60px;
+text-transform: uppercase;
+text-align: center;
+margin:0;
+
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media only screen and (max-device-width: 1024px) and (orientation: portrait) {
@@ -713,7 +731,7 @@ div.thx {
     flex-direction: row-reverse;
   }
   .section_img  {
-    padding:10%;
+    padding:20px;
     }
     .contact_menu{
       display:block;
