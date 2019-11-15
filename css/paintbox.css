@@ -740,7 +740,8 @@ margin:0;
     flex-direction: row-reverse;
   }
   .section_img  {
-    padding:20px;
+    width: 70%;
+    margin: 0 auto;
     }
     .contact_menu{
       display:block;
