@@ -321,10 +321,10 @@ $(".mySlides").on("touchstart", function (event) {
     $(this).one("touchmove", function (event) {
         var xMove = event.originalEvent.touches[0].pageX;
         if (Math.floor(xClick - xMove) > 5) {
-            plusSlides(-1);
+            plusSlides(1);
         }
         else if (Math.floor(xClick - xMove) < -5) {
-            plusSlides(1);
+            plusSlides(-1);
         }
     });
     $(".mySlides").on("touchend", function () {
