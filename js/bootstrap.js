@@ -84,21 +84,6 @@ if (typeof jQuery === 'undefined') {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-$(".carousel").on("touchstart", function (event) {
-    var xClick = event.originalEvent.touches[0].pageX;
-    $(this).one("touchmove", function (event) {
-        var xMove = event.originalEvent.touches[0].pageX;
-        if (Math.floor(xClick - xMove) > 5) {
-            $(this).carousel('next');
-        }
-        else if (Math.floor(xClick - xMove) < -5) {
-            $(this).carousel('prev');
-        }
-    });
-    $(".carousel").on("touchend", function () {
-        $(this).off("touchmove");
-    });
-});
 
 
 
@@ -313,6 +298,41 @@ $(".carousel").on("touchstart", function (event) {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
+$(".carousel").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > 5) {
+            $(this).carousel('next');
+        }
+        else if (Math.floor(xClick - xMove) < -5) {
+            $(this).carousel('prev');
+        }
+    });
+    $(".carousel").on("touchend", function () {
+        $(this).off("touchmove");
+    });
+});
+// moje start
+// =========================
+
+$(".mySlides").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > 5) {
+            plusSlides(-1);
+        }
+        else if (Math.floor(xClick - xMove) < -5) {
+            plusSlides(1);
+        }
+    });
+    $(".mySlides").on("touchend", function () {
+        $(this).off("touchmove");
+    });
+});
+// moje edn
+// =========================
 
 +function ($) {
     'use strict';
