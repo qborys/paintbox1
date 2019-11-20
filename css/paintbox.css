@@ -5,7 +5,12 @@
 
 :root {
   --main-color-normal: #EE287C;
-  --second-color-normal: #EE287C;
+  --main-color-high: #B60050;
+  --main-color-low: #FF67AB;
+  --second-color-normal: #803E98;
+  /* dark section */
+  --bg-color-dark: black;
+  --font-color-dark: white;
 }
 
 body {
@@ -69,6 +74,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
 }
 
@@ -194,6 +200,11 @@ a.next:hover, a.prev:hover {
   justify-content: flex-start;
 }
 
+.bg_dark{
+background-color: var(--bg-color-dark);
+color: var(--font-color-dark);
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -296,9 +307,10 @@ line-height: 40px;
   float:left;  
 }
 .contact_menu img{
-  float:left;
-  width: 30px;
-  margin: 5px 5px 0 0;
+  width: 40px;
+  margin: 10px 5px;
+  border: solid var(--main-color-normal) 3px;
+  border-radius: 50%;
 }
 .contact_menu a{
   color: var(--main-color-normal);
@@ -614,8 +626,48 @@ line-height: 60px;
 text-transform: uppercase;
 text-align: center;
 margin:0;
+}
+
+/* MANICURE PAGE */
+.services_box {
+
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.services_box_top{
+  height:200px;
+  border-radius: 10px 10px 0 0;
+  background-image:url(../img/manicure_box.jpg);
+  background-size: cover;
+  display:flex;
+  align-items: flex-end;
 
 }
+
+.services_box_top h3{
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.services_box_bottom{
+  height:50%;
+  border-radius: 0 0 10px 10px;
+  background-color:var(--main-color-normal);
+  padding:10px;
+}
+
+.main_color_high{ 
+  background-color:var(--main-color-high);
+}
+
+
 
 
 /* RESPONSIVE CSS
@@ -667,12 +719,10 @@ margin:0;
   }
   .paintboxlogo {
     width: 150px;
-    margin: ;
     display: block;
   }
   .paintboxlogo img {
-    width: 150px;
-    height: 150px;
+ 
   }
   .smalllogo {
     display: none;
@@ -745,9 +795,9 @@ margin:0;
     }
     .contact_menu{
       display:block;
-      font-size: 24px;
+      font-size: 25px;
       line-height: 60px;
-      font-weight: normal;
+      font-weight: bold;
       }
 
       .contact_menu img{
@@ -786,8 +836,8 @@ margin:0;
     display: block;
   }
   .paintboxlogo img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 1170px) {
@@ -1075,3 +1125,6 @@ fieldset[disabled] .btn-zolty-odcien.active {
   color: #FFAA01; 
   background-color: #ffffff; 
 }
+
+
+
