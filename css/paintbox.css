@@ -628,7 +628,7 @@ div.thx {
 
 .alert_frame{
 margin:40px 0px;
-background-color: black;
+background-color: var(--main-color-high);
 
 
 }
@@ -829,7 +829,7 @@ border: none;
     flex-direction: row-reverse;
   }
   .section_img  {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     }
     .contact_menu{
