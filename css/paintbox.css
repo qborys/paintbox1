@@ -88,7 +88,9 @@ footer {
 }
 
 .carousel-cta {
-  text-align: center;}
+  text-align: center;
+  margin: 60px 0;
+}
 
 
   .carousel-indicators {
@@ -358,7 +360,6 @@ a:hover{
 
 .carousel .item {
   height: 100%;
-  background-color: #fff;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -668,6 +669,12 @@ margin:0;
 }
 
 
+hr.interval{
+margin:40px 0;
+border: none;
+
+}
+
 
 
 /* RESPONSIVE CSS
@@ -919,20 +926,19 @@ margin:0;
 .btn-roz {
   color: #FFFFFF;
   background-color: var(--main-color-normal);
-  border-color: #FFFFFF;
+  border:2px solid var(--main-color-normal);; 
   transition:.2s;
+
 }
 .btn-roz:hover, .btn-roz:focus, .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
   color: #FFFFFF;
   background-color: #000;
-  border-color: #FFFFFF;
 }
 .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
   background-image: none;
 }
 .btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
   background-color: var(--main-color-normal);
-  border-color: #FFFFFF;
 }
 .btn-roz .badge {
   color: var(--main-color-normal);
