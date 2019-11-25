@@ -78,6 +78,11 @@ footer {
 
 }
 
+.one_high{
+  align-items: stretch;
+  padding:0 20px;
+}
+
 .carousel_span {
   font-size: 48px;
   display:block;
@@ -445,6 +450,13 @@ width:100%;
   /* Space out the Bootstrap <hr> more */
 }
 
+.featurette {
+  
+  padding:40px 0
+
+
+}
+
 
 /* Thin out the marketing headings */
 
@@ -633,23 +645,36 @@ margin:0;
 .services_box {
 
   margin: 10px;
+  flex:1;
   display: flex;
   flex-direction: column;
+  padding:0;
+  transition:.4s;
 }
 
+.services_box:hover .services_box_top{
+
+
+
+
+}
 
 
 .services_box_top{
-  height:200px;
+  flex-basis:200px;
   border-radius: 10px 10px 0 0;
   background-image:url(../img/manicure_box.jpg);
   background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   display:flex;
   align-items: flex-end;
+  flex-grow:1;
+  transition:.4s;
 
 }
 
-.services_box_top h3{
+.services_box_top h2{
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   width: 100%;
@@ -658,11 +683,17 @@ margin:0;
 }
 
 .services_box_bottom{
-  height:50%;
+  /* height:50%; */
   border-radius: 0 0 10px 10px;
   background-color:var(--main-color-normal);
-  padding:10px;
+  padding:20px 20px;
 }
+
+.services_box_bottom p{
+  /* height:50%; */
+  margin:0;
+}
+
 
 .main_color_high{ 
   background-color:var(--main-color-high);
