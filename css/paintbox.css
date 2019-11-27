@@ -33,9 +33,13 @@ p{
   }
 
 .h2, h2{
-font-size: 2rem;
+font-size: 3rem;
 
 }
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;}
 
 
 footer {
@@ -400,7 +404,7 @@ padding: 40px 20px;
 }
 .section_img img {
 border-radius: 15%;
-width:100%;
+width:90%;
 }
 
 .spa_txt{
@@ -704,7 +708,7 @@ thead tr {
 /* MANICURE PAGE */
 
 .services, .pricelist {
-  border-right: 6px solid var(--main-color-high);
+  border-right: 4px solid var(--main-color-high);
 
 }
 
@@ -743,6 +747,7 @@ thead tr {
 }
 
 .services_box_top h2{
+  font-size: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   width: 100%;
