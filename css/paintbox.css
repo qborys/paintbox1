@@ -18,6 +18,12 @@ body {
   font-family: 'Signika', sans-serif;
   font-weight: 300;
 }
+
+p{
+  margin: 0 0 20px;
+}
+
+
 footer {
   color:white;
   background-color: black;
@@ -94,7 +100,7 @@ footer {
 
 .carousel-cta {
   text-align: center;
-  margin: 60px 0;
+  margin: 40px 0;
 }
 
 
@@ -376,7 +382,7 @@ a:hover{
 /* pb */
 .section_img  {
 text-align: center;
-padding: 20px;  
+padding: 40px 20px;  
 }
 .section_img img {
 border-radius: 15%;
@@ -452,8 +458,8 @@ width:100%;
 
 .featurette {
   
-  padding-top:40px;
-  padding-bottom: 40px;
+  padding-top:20px;
+  padding-bottom:20px;
 
 
 }
@@ -525,7 +531,7 @@ div.pakiet .desc {
 
 table tr td:last-child, table tr th:last-child, 
 table tr td:nth-last-child(2), table tr th:nth-last-child(2) {
-  text-align: right;
+  text-align: left;
   font-size: 13px;
 }
 table tr td:last-child {
@@ -642,7 +648,53 @@ text-align: center;
 margin:0;
 }
 
+thead tr {
+  background: var(--main-color-high);
+  color:white;
+  border-radius: 10px 10px 0 0;
+ 
+}
+
+.table-hover-light thead tr {
+  background: var(--main-color-normal);
+ 
+ 
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color:transparent;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: var(--main-color-high);
+  color:white;
+}
+
+.table-hover-light>tbody>tr:hover {
+  background-color: var(--main-color-normal);
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  /* padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top; */
+  border-top: none;
+}
+
+.table>thead>tr>th {
+  /* vertical-align: bottom; */
+  border-bottom: none;
+}
+
 /* MANICURE PAGE */
+
+.services, .pricelist {
+  border-right: 6px solid var(--main-color-high);
+
+}
+
+
 .services_box {
 
   margin: 20px;
@@ -651,6 +703,7 @@ margin:0;
   flex-direction: column;
   padding:0;
   transition:.4s;
+  color: white;
 }
 
 .services_box:hover .services_box_top{
@@ -708,6 +761,13 @@ border: none;
 }
 
 
+.description_cattegory {
+  padding: 20px 0;
+  border-left: 4px solid var(--main-color-normal);
+  /* background: #FCDEEB; */
+  /* background: var(--main-color-normal);
+  color: white;} */
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -968,6 +1028,13 @@ border: none;
   border:none;
   outline:none;
 }
+
+.btn-roz:hover{
+
+ border:solid 2px var(--main-color-normal);
+}
+
+
 .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
   background-image: none;
   border:none;
