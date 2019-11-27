@@ -767,6 +767,16 @@ border: none;
   /* background: #FCDEEB; */
   /* background: var(--main-color-normal);
   color: white;} */
+  background-image: url(../img/polish.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.description_text{
+font-size:20px;
+
+
+}
+
 }
 
 /* RESPONSIVE CSS
