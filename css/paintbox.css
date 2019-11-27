@@ -7,10 +7,12 @@
   --main-color-normal: #EE287C;
   --main-color-high: #B60050;
   --main-color-low: #FF67AB;
+  --main-color-transparent:rgba(182, 0, 79, 0.05);
   --second-color-normal: #803E98;
   /* dark section */
   --bg-color-dark: black;
   --font-color-dark: white;
+  --border-radius-img: 40px;
 }
 
 html {
@@ -24,12 +26,13 @@ body {
 }
 
 p{
-  margin: 0 0 20px;
+  margin: 10px 0;
   font-size:1.4rem;
 }
 
 .big_txt{
   font-size:1.6rem;
+ 
   }
 
 .h2, h2{
@@ -48,6 +51,11 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+.table {
+  margin-bottom: 0px;
+}
+
 .first-slide {
 
 }
@@ -100,6 +108,9 @@ footer {
   align-items: center;
   justify-content: space-between;
 
+}
+.pricelist .row-flex{
+  align-items: flex-start;
 }
 
 .one_high{
@@ -341,7 +352,7 @@ line-height: 40px;
   width: 40px;
   margin: 10px 5px;
   border: solid var(--main-color-normal) 3px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-img)
 }
 .contact_menu a{
   color: var(--main-color-normal);
@@ -403,7 +414,7 @@ text-align: center;
 padding: 40px 20px;  
 }
 .section_img img {
-border-radius: 15%;
+border-radius: var(--border-radius-img);
 width:90%;
 }
 
@@ -420,7 +431,7 @@ width:90%;
 
 }
 .testimonial_img img{
-  border-radius: 15%;
+  border-radius: var(--border-radius-img);
   width: 100%;
 }
 
@@ -679,6 +690,9 @@ thead tr {
  
 }
 
+.table-striped>tbody>tr:nth-of-type(even) {
+  background-color:var(--main-color-transparent);
+}
 .table-striped>tbody>tr:nth-of-type(odd) {
   background-color:transparent;
 }
@@ -707,10 +721,7 @@ thead tr {
 
 /* MANICURE PAGE */
 
-.services, .pricelist {
-  border-right: 4px solid var(--main-color-high);
 
-}
 
 
 .services_box {
@@ -780,9 +791,15 @@ border: none;
 }
 
 
+.services, .pricelist {
+  /* border-right: 4px solid var(--main-color-normal); */
+
+}
+
+
 .description_cattegory {
   padding: 20px 0;
-  border-left: 4px solid var(--main-color-normal);
+  /* border-left: 4px solid var(--main-color-normal); */
   /* background: #FCDEEB; */
   /* background: var(--main-color-normal);
   color: white;} */
@@ -790,6 +807,14 @@ border: none;
     background-attachment: fixed;
     background-size: cover;
 }
+
+.description_pricelist {
+  padding: 20px 0;
+  background: var(--main-color-high);
+  color: white;
+  
+}
+
 
 
 }
