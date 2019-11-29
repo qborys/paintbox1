@@ -30,7 +30,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 e lements and media queries -->
     <!--[if lt IE 9]>
@@ -88,15 +88,16 @@
                             <li><a href="pediicure.html">Pedicure</a></li>
                             <li><a href="rzesy-i-brwi.html">Rzęsy i brwi</a></li>
                             <li><a href="cennik.html">Cennik</a></li>
-                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="#kontakt">Kontakt</a></li>
                             <!-- <li><a href="#contact">Rezerwuj</a></li>-->
                             <li>
-                                <a class="fb" href="https://www.facebook.com/PaintBoxNailBar"><i
-                                        class="fa fa-facebook-square fa-3x"></i></a>
+                                <a class="fb" href="https://www.facebook.com/PaintBoxNailBar">
+                                    <i class="fa fa-facebook-square fa-3x"></i>
+                                </a>
                             </li>
                             <li>
-                                <a class="in" href="https://instagram.com/paintboxnailbar/"><i
-                                        class="fa fa-instagram fa-3x"></i></a>
+                                <a class="in" href="https://instagram.com/paintboxnailbar/">
+                                    <i class="fa fa-instagram fa-3x"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -106,7 +107,6 @@
 
         </div>
     </header><!-- /header-->
-
 
     <!-- Carousel================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -389,61 +389,72 @@
 
 
     <!-- FOOTER -->
-    <footer class="foot">
+    <footer id="kontakt" class="foot">
         <div class="container">
             <div class="row row-flex one_high">
-                <section class="col-md-4">
+                <section class="col-md-3">
 
                     <article class="footer_box">
-                        <header class="color_header">SKONTAKTUJ SIĘ Z PAINTBOX</header>
+                        <header class="color_header color_high">SKONTAKTUJ SIĘ Z PAINTBOX</header>
                         <div class="footer_box_main">
-                            <p>ZADZWOŃ 22 258 48 48</p>
-                            <!-- <img src="img/phone2.svg" alt=""> <a href="tel:222584444">22 258 44 44</a> -->
-                            <p>email: recepcja@paintbox.pl</p>
+                            <!-- <p>ZADZWOŃ 22 258 48 48</p> -->
+                            <p> <i class="fa fa-phone fa-1x"></i>
+                                <a href="tel:222584444">22 258 44 44</a></p>
+                            <p><i class="fa fa-envelope fa-1x"></i>recepcja@paintbox.pl</p>
 
-                            <button class="btn-roz">Napisz do nas</button>
-                            <p>WE SPEAK ENGLISH</p>
+                            <p><i class="fa fa-facebook fa-1x"></i>Napisz do nas</p>
+                            <p><i class="fa fa-flag fa-1x roz"></i>WE SPEAK ENGLISH</p>
                         </div>
                     </article>
                     <article class="footer_box">
-                        <header class="color_header">MEDIA SPOŁECZNOŚCIOWE</header>
+                        <header class="color_header color_normal">POLUB PAINTBOX</header>
                         <div class="footer_box_main">
-                            <p>PaintBoxNailBar</p>
-                            <p>PaintBoxNailBar</p>
-                        </div>
-                    </article>
-
-                </section>
-                <section class="col-md-4">
-
-                    <article class="footer_box">
-                        <header class="color_header">ADRES</header>
-                        <div class="footer_box_main">
-                            <p>Kazachska 1 (wejście od XXX)</p>
-                            <p>Warszawa (Miasteczko Wilanów)</p>
-                        </div>
-
-
-                    </article>
-                    <article class="footer_box">
-                        <header class="color_header">GODZINY PRACY</header>
-                        <div class="footer_box_main">
-                            <p>Poniedziałek-Piątek 9-21</p>
-                            <p>Sobota 9-20</p>
-                            <p>Niedziela 10-18</p>
+                            <p><i class="fa fa-facebook-square fa-1x"></i>PaintBoxNailBar</p>
+                            <p><i class="fa fa-instagram fa-1x"></i>PaintBoxNailBar</p>
                         </div>
                     </article>
 
                 </section>
+                <section class="col-md-3">
 
-                <section class="col-md-4">
+                    <article class="footer_box">
+                        <header class="color_header color_normal">ADRES</header>
+                        <div class="footer_box_main">
+
+                            <p><i class="fa fa-heart fa-1x"></i>ul. Kazachska 1</p>
+                            <p class="adress">wejście od XXX</p>
+                            <p class="adress">Warszawa Wilanów</p>
+
+                            <p><i class="fa fa-car fa-1x roz"></i>Prywatny parking</p>
+                        </div>
 
 
+                    </article>
+                    <article class="footer_box">
+                        <header class="color_header color_high">GODZINY PRACY</header>
+                        <div class="footer_box_main">
+                            <p><i class="fa fa-calendar-o fa-1x"></i>Poniedziałek-Piątek 9-21</p>
+                            <p><i class="fa fa-calendar-o fa-1x"></i>Sobota 9-20</p>
+                            <p><i class="fa fa-calendar-o fa-1x roz"></i>Niedziela 10-18</p>
+                        </div>
+                    </article>
+
+                </section>
+
+                <section class="col-md-5">
                     <article class="footer_box footer_box_map">
-                        <img src="img/mapa.jpg" alt="">
+                        <!-- <img src="img/mapa.jpg" alt=""> -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9789.9746686064!2d21.0804293!3d52.1617173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16803e62cb83e7d2!2sPaintBox%20Nail%20Bar!5e0!3m2!1spl!2spl!4v1575042639151!5m2!1spl!2spl"
+                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+
+                        <!-- <iframe
+                            src="https://www.google.com/maps/d/u/1/embed?mid=19vDphXo9nm8F2zgdK6Glha0sONOFL-EL"></iframe> -->
+
                     </article>
-
-
                 </section>
 
 
@@ -480,6 +491,10 @@
         });
     </script>
     <script src="js/paintbox.js"></script>
+
+
+
+
     <!--<script>
 
 

@@ -14,6 +14,23 @@
   --font-color-dark: white;
   --border-radius-img: 40px;
 }
+#map {
+  height: 100%;
+}
+
+.color_low, .color_normal,.color_high{
+  color:white;
+}
+
+.color_low{
+  background-color: var(--main-color-low);  
+}
+.color_normal{
+  background-color: var(--main-color-normal);
+}
+.color_high{
+  background-color: var(--main-color-high);
+}
 
 html {
   font-size: 10px;
@@ -26,11 +43,12 @@ body {
 }
 
 p{
-  margin: 10px 0;
-  font-size:1.4rem;
+  margin: 10px;
+  font-size:1.6rem;
 }
 
-img{width:100%}
+img, iframe {width:100%}
+
 
 
 .h2, h2{
@@ -43,7 +61,7 @@ font-size: 3rem;
   margin-bottom: 20px;}
   
   .big_txt{
-    font-size:1.6rem;
+    font-size:1.8rem;
    
     }
 
@@ -51,8 +69,16 @@ footer {
   color:white;
   background-color: black;
 }
+.fa{
+
+  /* font-size:1.6rem; */
+  /* margin-right:10px */
+}
 
 
+.fa-1x{
+width: 30px;
+text-align: center;}
 
 .table {
   margin-bottom: 0px;
@@ -259,7 +285,7 @@ li.turkus a, .turkus {
   color: #01AAAD;
 }
 li.roz a, .roz {
-  color: #ED207B;
+  color: var(--main-color-normal);
 }
 li.zolty a, .zolty {
   color: #777;
@@ -663,7 +689,7 @@ div.thx {
 /* pb */
 
 .alert_frame{
-margin:40px 0px;
+margin:40px 0px 20px;
 background-color: var(--main-color-high);
 
 
@@ -679,9 +705,9 @@ margin:0;
 }
 
 thead tr {
-  background: var(--main-color-high);
+  /* background: var(--main-color-high);
   color:white;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0; */
  
 }
 
@@ -826,21 +852,37 @@ margin: 20px 0px
 }
 
 
+.footer_box_map iframe {
+  height: 320px;
+}
+
 
 .color_header{
   line-height:4rem;
   text-align: center;
-  background-color: var(--main-color-high);
-  color: white;
   }
 
   .footer_box_main{
 
-margin-left:20px;
+/* padding: 5px 20px; */
 
   }
 
 
+  .footer_box_main img {
+    border: solid var(--main-color-normal) 3px;
+    border-radius: var(--border-radius-img);
+    width:30px;
+    margin-right:10px
+  }
+  .footer_box_main a {
+    color:white;
+    font-size:1.6rem;
+  }
+
+  .adress {
+    margin-left:40px;
+  }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -993,12 +1035,11 @@ margin-left:20px;
       }
 
 .footer_box {
-        margin: 20px 30px;
+        /* margin: 20px 30px; */
     }
 
-
 .one_high {
-      padding: 0 20px;  \
+      padding: 0 20px;  
 }  
 }
 
@@ -1012,7 +1053,6 @@ margin-left:20px;
   }
   .paintboxlogo {
     width: 150px;
-    margin: ;
     display: block;
   }
   .paintboxlogo img {
