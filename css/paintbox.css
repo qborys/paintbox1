@@ -376,7 +376,7 @@ line-height: 40px;
   width: 40px;
   margin: 10px 5px;
   border: solid var(--main-color-normal) 3px;
-  border-radius: var(--border-radius-img)
+  border-radius: 50%;
 }
 .contact_menu a{
   color: var(--main-color-normal);
@@ -828,7 +828,7 @@ border: none;
   .bg_light{
     background-color: white;
     color: black;
-    background-image: linear-gradient(45deg );
+    background-image: url("http://getwallpapers.com/wallpaper/full/a/b/e/272679.jpg");
     background-attachment: fixed;
     background-size: cover;
     }
