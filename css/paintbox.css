@@ -12,7 +12,7 @@
   /* dark section */
   --bg-color-dark: black;
   --font-color-dark: white;
-  --border-radius-img: 40px;
+  --border-radius-img: 20px;
 }
 #map {
   height: 100%;
