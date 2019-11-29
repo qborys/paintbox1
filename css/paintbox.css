@@ -818,7 +818,7 @@ border: none;
 }
 
 .footer_box{
-margin: 20px 30px
+margin: 20px 0px
 
 }
 
@@ -992,6 +992,10 @@ margin-left:20px;
 .container_gallery .next {
   right: 50%;
       }
+
+      .footer_box {
+        margin: 20px 30px;
+    }
 
 }
 
