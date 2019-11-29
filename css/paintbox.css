@@ -30,10 +30,8 @@ p{
   font-size:1.4rem;
 }
 
-.big_txt{
-  font-size:1.6rem;
- 
-  }
+img{width:100%}
+
 
 .h2, h2{
 font-size: 3rem;
@@ -43,14 +41,18 @@ font-size: 3rem;
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 20px;
   margin-bottom: 20px;}
-
+  
+  .big_txt{
+    font-size:1.6rem;
+   
+    }
 
 footer {
   color:white;
   background-color: black;
-  padding: 20px 0;
-  text-align: center;
 }
+
+
 
 .table {
   margin-bottom: 0px;
@@ -815,9 +817,31 @@ border: none;
   
 }
 
-
+.footer_box{
+margin: 20px 30px
 
 }
+
+.footer_box_map{
+  margin: 20px 0
+}
+
+
+
+.color_header{
+  line-height:4rem;
+  text-align: center;
+  background-color: var(--main-color-high);
+  color: white;
+  }
+
+  .footer_box_main{
+
+margin-left:20px;
+
+  }
+
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
