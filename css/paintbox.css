@@ -828,6 +828,9 @@ border: none;
   .bg_light{
     background-color: white;
     color: black;
+    background-image: linear-gradient(45deg );
+    background-attachment: fixed;
+    background-size: cover;
     }
 
 .bg_cherry {
@@ -1155,22 +1158,23 @@ margin: 20px 0px
   transition:.2s;
 
 }
-.btn-roz:hover, .btn-roz:focus, .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
+.btn-roz:hover {
   color: #FFFFFF;
   background-color: #000;
-  border:none;
+  border:solid 2px var(--main-color-normal);
   outline:none;
 }
 
-.btn-roz:hover{
-
- border:solid 2px var(--main-color-normal);
+.btn.focus, .btn:focus, .btn:hover {
+  color:white;
+  text-decoration: none;
 }
 
 
 .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
   background-image: none;
-  border:none;
+  background-color: var(--main-color-normal);
+border:solid 2px var(--main-color-normal);
 }
 .btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
   background-color: var(--main-color-normal);
