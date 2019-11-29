@@ -444,7 +444,10 @@ width:100%;
 
 .spa_txt{
   margin-top:10px;
+
 }
+
+
 
 .team_img img{
   width:100%;
@@ -842,6 +845,7 @@ border: none;
   background-image: url(../img/polish.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
     color:white;
 }
 
