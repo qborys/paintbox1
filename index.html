@@ -51,6 +51,28 @@
       <p>Zadzwoń i umów wizytę</p>
       </p>
       <p>22 258 44 44 </p>
+
+      <form class="was-validated" action="form.php" method="post">
+        <div class="form-group">
+          <label for="exampleInputName1">Imię</label>
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="First name" name="imie"> </div>
+
+        <div class="form-group">
+          <label for="exampleInputPhone1">Numer telefonu</label>
+          <input type="tel" class="form-control" id="exampleInputPhone1" aria-describedby="phoneHelp"
+            placeholder="Wpisz numer telefonu" name="telefon" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
     </div>
     <!-- <button class="btn-roz btn-corner" onclick="umowwizyte()"> <span>x</span> </button> -->
 
