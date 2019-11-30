@@ -21,6 +21,13 @@ function umowwizyte() {
 
 }
 
+function wylaczmenu() {
+    var navbar2 = document.getElementById("navbar");
+    navbar2.classList.toggle("in");
+
+}
+
+
 
 
 
