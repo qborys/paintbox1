@@ -116,12 +116,14 @@ height: 100vh;
 
 .popup_content p {
 
-font-size:40px;
-
-
+font-size:4rem;
 }
 
+.popup_content p span {
 
+  font-size:2rem;
+  }
+  
 
 .first-slide {
 

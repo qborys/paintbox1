@@ -55,3 +55,17 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+
+
+
+
+$(document).ready(function () {
+    $("form").submit(function (event) {
+        $.post("form.php", $(this).serialize(), function (data) {
+            alert(data);
+        });
+        event.preventDefault();
+    });
+
+});
