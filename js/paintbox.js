@@ -5,8 +5,16 @@ function myFunction() {
     wiecej.classList.toggle("hide");
     var mniej = document.getElementById("mniej");
     mniej.classList.toggle("hide");
+}
+
+
+function zmianatla() {
+    var guzik = document.getElementById("guzik");
+    guzik.classList.toggle("bg_cherry");
 
 }
+
+
 
 
 
