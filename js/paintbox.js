@@ -15,6 +15,13 @@ function zmianatla() {
 }
 
 
+function umowwizyte() {
+    var popup = document.getElementById("popup");
+    popup.classList.toggle("hide");
+
+}
+
+
 
 
 
