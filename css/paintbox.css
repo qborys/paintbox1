@@ -158,6 +158,8 @@ text-align: center;}
 
 .carousel-image img {
   width: 100%;
+  border-bottom: 1px solid #b81159;
+
 }
 
 .carousel-cta {
@@ -1038,6 +1040,10 @@ margin: 20px 0px
     font-size: 60px;
     font-weight: 300;
   }
+
+  .carousel-image img {
+
+    border-bottom: none;}
 
   .row-flex{
     flex-direction: row;
