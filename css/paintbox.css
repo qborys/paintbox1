@@ -84,6 +84,14 @@ footer {
   color:white;
   background-color: black;
 }
+
+.img_footer{
+width:30px;
+text-align: center;
+}
+
+.img_footer img{margin:0 5px;}
+
 .fa{
 
   /* font-size:1.6rem; */
@@ -117,9 +125,11 @@ height: 100vh;
 }
 .popup_content{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+width:80%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
 }
 
 .popup_content a {
@@ -244,7 +254,7 @@ font-size:2.5rem;
 .container_gallery .next {
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  top: 15%;
   width: auto;
   padding: 16px;
   /* margin-top: -50px; */
@@ -516,6 +526,9 @@ width:100%;
 }
 
 .testimonial_txt {text-align:center}
+
+
+
 
 
 
@@ -831,7 +844,7 @@ tr > td:first-child {
 .services_box_top{
   flex-basis:200px;
   border-radius: 10px 10px 0 0;
-  background-image:url(../img/manicure_box.jpg);
+  background-image: linear-gradient(45deg, var(--main-color-normal), var(--main-color-high ));
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -841,6 +854,14 @@ tr > td:first-child {
   transition:.4s;
 
 }
+
+.manicure_hybrydowy{background-image:url(../img/box/manicure/hybrydowy.jpg );}
+.manicure_spa{background-image:url(../img/box/manicure/spa.jpg );}
+.manicure_klasyczny{background-image:url(../img/box/manicure/klasyczny.jpg );}
+.manicure_japonski{background-image:url(../img/box/manicure/japonski.jpg );}
+.manicure_opi{background-image:url(../img/box/manicure/opi.jpg );}
+.manicure_mala_estetka{background-image:url(../img/box/manicure/mala_estetka.jpg );}
+
 
 .services_box_top h2{
   font-size: 20px;
@@ -855,6 +876,8 @@ tr > td:first-child {
   /* height:50%; */
   border-radius: 0 0 10px 10px;
   background-color:var(--main-color-normal);
+  /* background-image: linear-gradient(45deg, var(--main-color-normal), var(--main-color-high )); */
+
   padding:20px 20px;
 }
 
@@ -866,6 +889,8 @@ tr > td:first-child {
 
 .main_color_high{ 
   background-color:var(--main-color-high);
+  /* background-image: linear-gradient(-45deg, var(--main-color-normal), var(--main-color-high )); */
+
 }
 
 
@@ -906,9 +931,10 @@ border: none;
   /* padding: 20px 0; */
   /* border-left: 4px solid var(--main-color-normal); */
   /* background: #FCDEEB; */
-  /* background: var(--main-color-normal);
-  color: white;} */
-  background-image: url(../img/polish.jpg);
+
+  /* color: white;} */
+  /* background-image: url(../img/polish.jpg); */
+  background: var(--main-color-high);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -950,15 +976,28 @@ margin: 20px 0px
 
 
   .footer_box_main img {
-    border: solid var(--main-color-normal) 3px;
-    border-radius: var(--border-radius-img);
-    width:30px;
-    margin-right:10px
+    /* border: solid var(--main-color-normal) 3px;
+    border-radius: var(--border-radius-img); */
+    text-align: center;
+    width:20px;
+    /* margin-right:10px */
   }
   .footer_box_main a {
+    display:block;
+    margin:10px;
     color:white;
     font-size:1.6rem;
+    font-weight:normal;
   }
+
+  .footer_box_main a:hover {
+    color:var(--main-color-normal );
+    font-weight:normal;}
+
+
+    .footer__copy-text a{color:white}
+    .footer__copy-text a:hover{color: black}
+
 
   .adress {
     margin-left:40px;
@@ -1115,6 +1154,9 @@ margin: 20px 0px
         width: 40px;
         margin: 10px 5px;}
 
+    
+
+
     .container_gallery {
         flex-direction: row;
       }
@@ -1127,8 +1169,19 @@ margin: 20px 0px
 }
 
 .container_gallery .next {
-  right: 50%;
+  right: 43%;
       }
+.container_gallery .photo-9 {
+right: 50%;
+            }
+
+.mySlides {
+width:133%;
+}
+
+.photo9 {
+  width:100%;
+  }
 
 .footer_box {
         /* margin: 20px 30px; */
@@ -1141,6 +1194,10 @@ margin: 20px 0px
 .popup{
   width:70%;
   height: 100%;
+}
+
+.popup_content{
+ 
 }
 
  

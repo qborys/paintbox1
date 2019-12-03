@@ -46,6 +46,7 @@
 
 <body>
 
+  <!-- umow wizyte popup -->
   <div id="popup" class="popup hide">
     <div class="popup_content">
       <p>Zadzwoń i umów wizytę</p>
@@ -84,7 +85,7 @@
       <span aria-hidden="true">&times;</span>
     </button>
 
-  </div>
+  </div> <!-- umow wizyte popup -->
 
 
   <!-- contact_header================================================== -->
@@ -131,14 +132,15 @@
               <li><a href="pedicure.html">Pedicure</a></li>
               <li><a href="rzesy-i-brwi.html">Rzęsy i brwi</a></li>
               <li><a href="cennik.html">Cennik</a></li>
-              <li><a href="#kontakt" onclick="wylaczmenu()">Kontakt</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
               <!-- <li><a href="#contact">Rezerwuj</a></li>-->
               <li>
-                <a class="fb" href="https://www.facebook.com/PaintBoxNailBar"><i
+                <a target="_blank" class="fb" href="https://www.facebook.com/PaintBoxNailBar"><i
                     class="fa fa-facebook-square fa-3x"></i></a>
               </li>
               <li>
-                <a class="in" href="https://instagram.com/paintboxnailbar/"><i class="fa fa-instagram fa-3x"></i></a>
+                <a target="_blank" class="in" href="https://instagram.com/paintboxnailbar/"><i
+                    class="fa fa-instagram fa-3x"></i></a>
               </li>
             </ul>
           </div>
@@ -289,7 +291,7 @@
   <!-- main - o PB SpaPB TeamPB================================================== -->
   <main>
     <!-- Onas================================================== -->
-    <section id="guzik" class="bg_light2 bg_cherry" onclick="zmianatla()">
+    <section class="bg_light2">
       <div class="container featurette">
         <article class="row row-flex">
           <div class="col-md-7">
@@ -405,7 +407,7 @@
       <div class="container featurette">
         <header class="row">
           <div class="col-md-12">
-            <h2>Galeria</h2>
+            <h2>Galeria Paintbox</h2>
           </div>
         </header>
 
@@ -416,47 +418,59 @@
 
           <!-- Full-width images with number text -->
           <div class="mySlides">
-            <div class="numbertext">1 / 9</div>
-            <img src="img/galeria/11.jpg" style="width:100%">
+            <div class="numbertext">1 / 12</div>
+            <img src="img/galeria/glowna/1.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <div class="numbertext">2 / 9</div>
-            <img src="img/galeria/22.jpg" style="width:100%">
+            <div class="numbertext">2 / 12</div>
+            <img src="img/galeria/glowna/2.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <div class="numbertext">3 / 9</div>
-            <img src="img/galeria/11.jpg" style="width:100%">
+            <div class="numbertext">3 / 12</div>
+            <img src="img/galeria/glowna/3.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <div class="numbertext">4 / 9</div>
-            <img src="img/galeria/22.jpg" style="width:100%">
+            <div class="numbertext">4 / 12</div>
+            <img src="img/galeria/glowna/4.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <div class="numbertext">5 / 9</div>
-            <img src="img/galeria/11.jpg" style="width:100%">
+            <div class="numbertext">5 / 12</div>
+            <img src="img/galeria/glowna/5.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <div class="numbertext">6 / 9</div>
-            <img src="img/galeria/22.jpg" style="width:100%">
+            <div class="numbertext">6 / 12</div>
+            <img src="img/galeria/glowna/6.jpg" style="width:100%">
           </div>
           <div class="mySlides">
-            <div class="numbertext">7 / 9</div>
-            <img src="img/galeria/11.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 9</div>
-            <img src="img/galeria/22.jpg" style="width:100%">
+            <div class="numbertext">7 / 12</div>
+            <img src="img/galeria/glowna/7.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <div class="numbertext">9 / 9</div>
-            <img src="img/galeria/11.jpg" style="width:100%">
+            <div class="numbertext">8 / 12</div>
+            <img src="img/galeria/glowna/8.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 12</div>
+            <img src="img/galeria/glowna/9.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 12</div>
+            <img src="img/galeria/glowna/10.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 12</div>
+            <img src="img/galeria/glowna/11.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">12 / 12</div>
+            <img src="img/galeria/glowna/12.jpg" style="width:100%">
           </div>
 
           <!-- Next and previous buttons -->
@@ -474,51 +488,63 @@
 
 
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(1)"
+              <img class="demo cursor" src="img/galeria/glowna/1.jpg" ontouchstart="currentSlide(1)"
                 onmouseenter="currentSlide(1)" alt="The Woods">
             </div>
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(2)"
+              <img class="demo cursor" src="img/galeria/glowna/2.jpg" ontouchstart="currentSlide(2)"
                 onmouseenter="currentSlide(2)" alt="Cinque Terre">
             </div>
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(3)"
+              <img class="demo cursor" src="img/galeria/glowna/3.jpg" ontouchstart="currentSlide(3)"
                 onmouseenter="currentSlide(3)" alt="Mountains and fjords">
             </div>
 
 
 
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(4)"
+              <img class="demo cursor" src="img/galeria/glowna/4.jpg" ontouchstart="currentSlide(4)"
                 onmouseenter="currentSlide(4)" alt="Northern Lights">
             </div>
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(5)"
+              <img class="demo cursor" src="img/galeria/glowna/5.jpg" ontouchstart="currentSlide(5)"
                 onmouseenter="currentSlide(5)" alt="Nature and sunrise">
             </div>
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(6)"
+              <img class="demo cursor" src="img/galeria/glowna/6.jpg" ontouchstart="currentSlide(6)"
                 onmouseenter="currentSlide(6)" alt="Snowy Mountains">
             </div>
 
 
 
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(7)"
+              <img class="demo cursor" src="img/galeria/glowna/7.jpg" ontouchstart="currentSlide(7)"
                 onmouseenter="currentSlide(7)" alt="Northern Lights">
             </div>
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(8)"
+              <img class="demo cursor" src="img/galeria/glowna/8.jpg" ontouchstart="currentSlide(8)"
                 onmouseenter="currentSlide(8)" alt="Nature and sunrise">
             </div>
             <div class="column_flex">
-              <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(9)"
+              <img class="demo cursor" src="img/galeria/glowna/9.jpg" ontouchstart="currentSlide(9)"
                 onmouseenter="currentSlide(9)" alt="Snowy Mountains">
+            </div>
+            <div class="column_flex">
+              <img class="demo cursor" src="img/galeria/glowna/10.jpg" ontouchstart="currentSlide(10)"
+                onmouseenter="currentSlide(10)" alt="Snowy Mountains">
+            </div>
+            <div class="column_flex">
+              <img class="demo cursor" src="img/galeria/glowna/11.jpg" ontouchstart="currentSlide(11)"
+                onmouseenter="currentSlide(11)" alt="Snowy Mountains">
+            </div>
+            <div class="column_flex">
+              <img class="demo cursor" src="img/galeria/glowna/12.jpg" ontouchstart="currentSlide(12)"
+                onmouseenter="currentSlide(12)" alt="Snowy Mountains">
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /section-->
+    </section><!-- /section gallery-->
 
 
     <!-- Testimonials================================================== -->
@@ -542,11 +568,8 @@
             <div class="testimonial_txt">
               <h3 class="testimonial_name">Joanna Jabłczyńska</h3>
               <h4 class="testimonial_job">aktorka</h4>
-              <q class="testimonial_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                porttitor
-                eleifend lectus, vitae accumsan elit pellentesque eu.</q>
-            </div>
 
+            </div>
           </div>
           <div class="col-md-3">
             <div class="testimonial_img">
@@ -555,9 +578,6 @@
             <div class="testimonial_txt">
               <h3 class="testimonial_name">Aleksandra Nieśpielak</h3>
               <h4 class="testimonial_job">aktorka</h4>
-              <q class="testimonial_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                porttitor
-                eleifend lectus, vitae accumsan elit pellentesque eu.</q>
             </div>
           </div>
           <div class="col-md-3">
@@ -567,9 +587,7 @@
             <div class="testimonial_txt">
               <h3 class="testimonial_name">Dorota Gardias</h3>
               <h4 class="testimonial_job">artystka</h4>
-              <q class="testimonial_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                porttitor
-                eleifend lectus, vitae accumsan elit pellentesque eu.</q>
+
             </div>
           </div>
           <!-- <div class="col-md-3">
@@ -579,8 +597,7 @@
                 <div class="testimonial_txt">
                   <h3 class="testimonial_name">Joanna Jabłczyńska</h3>
                   <h4 class="testimonial_job">aktorka</h4>
-                  <q class="testimonial_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor
-                    eleifend lectus, vitae accumsan elit pellentesque eu.</q>
+                  
                 </div>
               </div> -->
         </article>
@@ -615,19 +632,23 @@
             <header class="color_header color_high">SKONTAKTUJ SIĘ Z PAINTBOX</header>
             <div class="footer_box_main">
               <!-- <p>ZADZWOŃ 22 258 48 48</p> -->
-              <p> <i class="fa fa-phone fa-1x"></i>
-                <a href="tel:222584444">22 258 44 44</a></p>
-              <p><i class="fa fa-envelope fa-1x"></i>recepcja@paintbox.pl</p>
+              <a href="tel:222584444"> <i class="fa fa-phone fa-1x"></i>
+                22 258 44 44</a>
+              <a href="mailto:recepcja@paintbox.pl"><i class="fa fa-envelope fa-1x"></i>recepcja@paintbox.pl</a>
 
-              <p><i class="fa fa-facebook fa-1x"></i>Napisz do nas</p>
+              <a target="_blank" href="https://www.facebook.com/PaintBoxNailBar/">
+                <span class="img_footer"> <img src="img/messenger.svg" alt=""></span> Napisz do nas
+              </a>
               <p><i class="fa fa-flag fa-1x roz"></i>WE SPEAK ENGLISH</p>
             </div>
           </article>
           <article class="footer_box">
             <header class="color_header color_normal">POLUB PAINTBOX</header>
             <div class="footer_box_main">
-              <p><i class="fa fa-facebook-square fa-1x"></i>PaintBoxNailBar</p>
-              <p><i class="fa fa-instagram fa-1x"></i>PaintBoxNailBar</p>
+              <a target="_blank" href="https://www.facebook.com/PaintBoxNailBar/"><i
+                  class="fa fa-facebook-square fa-1x"></i>PaintBoxNailBar</a>
+              <a target="_blank" href="https://instagram.com/paintboxnailbar/"><i
+                  class="fa fa-instagram fa-1x"></i>PaintBoxNailBar</a>
             </div>
           </article>
 
@@ -682,11 +703,14 @@
 
 
     </div>
-    <div class="bg_cherry">
+    <div class="footer__copy-text bg_cherry">
       <div class="container">
         <div class="row">
           <div class="col-md-12 color_header">
-            <p> Polityka prywatności | Regulamin | © 2015-2019 Paintbox | Made with <i class="fa fa-heart fa-1x"></i>
+            <p> <a target="_blank" href="polityka_prywatnosci.html">Polityka prywatności</a>
+
+              | <a target="_blank" href="regulamin.html">Regulamin</a> | © 2015-2019 Paintbox | Made with
+              <i class="fa fa-heart fa-1x"></i>
               by
               Pananet </p>
           </div>
