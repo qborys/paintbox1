@@ -12,32 +12,22 @@
 
         gtag('config', 'UA-150078560-1');
     </script>
-
-
-
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description"
-        content="Salon kosmetyczny na Wilanowie. Manicure, pedicure, imprezy okolicznościowe. Zapraszamy!">
+    <meta name="description" content="Najlepszy manicure w Warszawie. Zapraszamy do naszego salonu w Wilanowie!">
     <meta name="author" content="">
     <!--<link rel="icon" href="../../favicon.ico">-->
-
     <title>Pedicure Warszawa Wilanów | Paintbox</title>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 e lements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-
     <!-- Custom styles for this template -->
     <link href="css/paintbox.css?v=1" rel="stylesheet">
     <!-- <link href='http://fonts.googleapis.com/css?family=Signika&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
@@ -45,27 +35,22 @@
 </head>
 
 <body>
-
     <!-- contact_header================================================== -->
     <div class="container">
         <div class="contact_menu">
-
-            <img src="img/phone2.svg" alt="">
+            <img src="img/phone2.svg" alt="zadzwoń do nas">
             <a href="tel:222584444">22 258 44 44</a>
         </div>
     </div>
-    <!-- nav/header-20.11.2019-v3-================================================== -->
-    <header class="navbar-wrapper">
+    <!-- nav-20.11.2019-v2-================================================== -->
+    <div class="navbar-wrapper">
         <div class="container">
-
             <nav class="navbar navbar-static-top">
                 <div class="container">
-
                     <div class="navbar-header">
                         <a class="smalllogo" href="index.html">
-                            <img src="img/logo_txt.png" alt="">
+                            <img src="img/logo_bg.png" alt="Paint Box">
                         </a>
-
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
@@ -74,13 +59,10 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-
-
                     <div id="navbar" class="navbar-collapse collapse">
-
                         <div class="paintboxlogo">
                             <a class="navbar-header" href="index.html">
-                                <img src="img/logo_bg.png">
+                                <img src="img/logo_bg.png" alt="Paintbox">
                             </a>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
@@ -88,182 +70,137 @@
                             <li><a href="pedicure.html">Pedicure</a></li>
                             <li><a href="rzesy-i-brwi.html">Rzęsy i brwi</a></li>
                             <li><a href="cennik.html">Cennik</a></li>
-                            <li><a href="#kontakt">Kontakt</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
                             <!-- <li><a href="#contact">Rezerwuj</a></li>-->
                             <li>
-                                <a class="fb" href="https://www.facebook.com/PaintBoxNailBar">
-                                    <i class="fa fa-facebook-square fa-3x"></i>
-                                </a>
+                                <a target="_blank" class="fb" href="https://www.facebook.com/PaintBoxNailBar"><i
+                                        class="fa fa-facebook-square fa-3x"></i></a>
                             </li>
                             <li>
-                                <a class="in" href="https://instagram.com/paintboxnailbar/">
-                                    <i class="fa fa-instagram fa-3x"></i></a>
+                                <a target="_blank" class="in" href="https://instagram.com/paintboxnailbar/"><i
+                                        class="fa fa-instagram fa-3x"></i></a>
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </nav>
-
         </div>
-    </header><!-- /header-->
-
+    </div><!-- /nav-->
     <!-- Carousel================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
         <div class="carousel-inner" role="listbox">
             <div class="item bg_dark active">
                 <div class="first-slide container">
                     <div class="row row-flex">
                         <div class="col-md-7">
-
                             <div class="carousel-image"><img src="img/pedicure-carousel.jpg" alt=""></div>
-
                         </div>
                         <div class="col-md-5">
-
                             <div class="carousel-cta">
-
-                                <h1>Pedicure <span class="carousel_span "> w Paintbox </span> </h1>
-                                </a> <a class=" btn btn-lg btn-roz" href="#" role="button">Umów wizytę
-                                </a>
-
-
+                                <h1>Pedicure</h1><span class="carousel_span">w Paintbox</span>
+                                <button class=" btn btn-lg btn-roz" onclick="umowwizyte()">Umów wizytę
+                                </button>
                             </div>
-
-
                         </div>
                     </div>
-
                 </div>
             </div>
-
-
         </div>
-
-
     </div><!-- /.carousel -->
-
-
-
     <main>
         <!-- section-->
-
-
-        <section id="guzik" class="bg_light2 bg_cherry" onclick="zmianatla()">
+        <section class="bg_light">
             <div class="container featurette">
                 <header class="row">
                     <div class="col-md-12">
-                        <h2> Pedicure klasyczny, japoński a może hybrydowy?</h2>
+                        <h2>Pedicure klasyczny, japoński a może hybrydowy?</h2>
                     </div>
                 </header>
                 <article class="row row-flex">
                     <div class="col-md-12">
+                        <p class="big_txt">Każdy z nich to także relaksująca kąpiel oraz najwyższej jakości kosmetyki do
+                            pielęgnacji. Doskonały wygląd Twoich stóp bez względu na porę roku. Tylko w PaintBox!
 
-                        <p class="big_txt"> Każdy z nich to także relaksująca kąpiel oraz najwyższej jakości kosmetyki
-                            do pielęgnacji. </p>
-                        <p class="big_txt"> Doskonały wygląd Twoich stóp bez względu na porę roku. Tylko w PaintBox !
                         </p>
-
-
-
-
-
-
-
-
-
-
 
                     </div>
                 </article>
             </div>
         </section><!-- /section-->
-
         <!-- section-->
         <section class="services bg_dark">
             <div class="container featurette">
                 <header class="row">
                     <div class="col-md-12">
-                        <h2>Pedicure</h2>
+                        <h2>Rodzaje Pedicure</h2>
                     </div>
                 </header>
-
                 <article>
-
                     <div class="row row-flex one_high">
                         <div class="col-md-4 services_box">
-                            <div class="services_box_top">
-                                <h2>PEDICURE HYBRYDOWY</h2>
+                            <div class="services_box_top pedicure_hybrydowy">
+                                <h3>Pedicure hybrydowy</h3>
                             </div>
                             <div class="services_box_bottom">
                                 <p>Propozycja skierowana dla osób, które nie mają czasu na cotygodniową pielęgnację
-                                    paznokci.
-                                    Cienka warstwa lakieru utwardzana w lampie LED. Trwałość od 2 do 4 tygodni, bez
-                                    odprysków.
-                                    LAKIER LŚNI BARDZIEJ od ZWYKŁEGO PEDICURU.
+                                    paznokci. Cienka warstwa lakieru utwardzana w lampie LED. Trwałość od 2 do 4
+                                    tygodni, bez odprysków. LAKIER LŚNI BARDZIEJ od ZWYKŁEGO PEDICURU.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4 services_box">
-                            <div class="services_box_top">
-                                <h2>PEDICURE KLASYCZNY
-                                </h2>
+                            <div class="services_box_top pedicure_spa">
+                                <h3>Pedicure SPA
+                                </h3>
                             </div>
                             <div class="services_box_bottom main_color_high">
-                                <p>Opiłowanie paznokci z usunięciem skórek.
-                                    Wygładzenie pięt za pomocą frezarki bądź tarki.
-                                    Zabieg zakańczamy malowaniem lakierem klasycznym oraz masażem stóp.
-                                    Trwałość od 1 do 4 tygodni.
+                                <p>Usunięcie martwego naskórka za pomocą peelingu. Nałożenie odżywczej maski. Zabieg
+                                    wykańczamy punktowym masażem stóp z wykorzystaniem preparatu silnie nawilżającego,
+                                    wygładzającego i chroniącego skórę. Zabieg polecany dla osób z przesuszoną skórą
+                                    stóp oraz z oznakami starzenia się skóry.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4 services_box">
-                            <div class="services_box_top">
-                                <h2>PEDICURE JAPOŃSKI
-                                </h2>
+                            <div class="services_box_top pedicure_klasyczny">
+                                <h3>Pedicure klasyczny</h3>
                             </div>
                             <div class="services_box_bottom">
+                                <p>Opiłowanie paznokci z usunięciem skórek. Wygładzenie pięt za pomocą frezarki bądź
+                                    tarki. Zabieg zakańczamy malowaniem lakierem klasycznym oraz masażem stóp. Trwałość
+                                    od 1 do 4 tygodni.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-flex one_high">
+                        <div class="col-md-4 services_box">
+                            <div class="services_box_top pedicure_japonski">
+                                <h3>Pedicure japoński</h3>
+                            </div>
+                            <div class="services_box_bottom main_color_high">
                                 <p>Metoda, która wzmacnia paznokcie nadając im połysk. Zabieg nadaje blask, zasila
-                                    paznokcie w naturalne składniki, witaminy A + E,
-                                    krzemionkę z morza japońskiego.
+                                    paznokcie w naturalne składniki, witaminy A + E, krzemionkę z morza japońskiego.
                                     Metoda zalecana na kruche, łamliwe i rozdwajające się paznokcie.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row row-flex one_high">
                         <div class="col-md-4 services_box">
-                            <div class="services_box_top">
-                                <h2>PEDICURE OPI INFINITE SHINE</h2>
-                            </div>
-                            <div class="services_box_bottom main_color_high">
-                                <p>Połysk i trwałość do 10 dni.
-                                    Lakier zwiększa swoją przyczepność pod wpływem światła słonecznego.
-                                    Lakier OPI Infinite Shine nie kruszy się, nie traci połysku ani trwałości. Jego
-                                    trwałość zwiększa się, a nie pogarsza, z upływem czasu. Produkt usuwamy za pomocą
-                                    zmywacza.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 services_box">
-                            <div class="services_box_top">
-                                <h2>PEDICURE SPA</h2>
+                            <div class="services_box_top pedicure_opi">
+                                <h3>Pedicure Opi Infinite Shine</h3>
                             </div>
                             <div class="services_box_bottom">
-                                <p>Usunięcie martwego naskórka za pomocą peelingu. Nałożenie odżywczej maski.
-                                    Zabieg wykańczamy punktowym masażem stóp z wykorzystaniem preparatu silnie
-                                    nawilżającego, wygładzającego i chroniącego skórę.
-                                    Zabieg polecany dla osób z przesuszoną skórą stóp oraz z oznakami starzenia się
-                                    skóry.
+                                <p>Połysk i trwałość do 10 dni.
+                                    Lakier OPI Infinite Shine zwiększa swoją przyczepność pod wpływem światła
+                                    słonecznego. Nie kruszy się, nie traci połysku ani trwałości. Jego trwałość
+                                    zwiększa się, a nie pogarsza, z upływem czasu. Produkt usuwamy za pomocą zmywacza.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4 services_box">
-                            <div class="services_box_top">
-                                <h2>PEDICURE LECZNICZY
-
-                                </h2>
+                            <div class="services_box_top pedicure_leczniczy">
+                                <h3>Pedicure leczniczy
+                                </h3>
                             </div>
                             <div class="services_box_bottom main_color_high">
                                 <p>Zabieg poświęcony jest osobom, które posiadają problematyczne stopy. Usuwane są
@@ -286,158 +223,133 @@
                         <h2>Galeria Pedicure</h2>
                     </div>
                 </header>
-
-
                 <!-- Container for the image gallery -->
                 <div class="container_gallery">
-
-
                     <!-- Full-width images with number text -->
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">1 / 9</div>
-                        <img src="img/galeria/11.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/1.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">2 / 9</div>
-                        <img src="img/galeria/22.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/2.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">3 / 9</div>
-                        <img src="img/galeria/11.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/3.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">4 / 9</div>
-                        <img src="img/galeria/22.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/4.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">5 / 9</div>
-                        <img src="img/galeria/11.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/5.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">6 / 9</div>
-                        <img src="img/galeria/22.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/6.jpg" style="width:100%">
                     </div>
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">7 / 9</div>
-                        <img src="img/galeria/11.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/7.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">8 / 9</div>
-                        <img src="img/galeria/22.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/8.jpg" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <div class="mySlides photo9">
                         <div class="numbertext">9 / 9</div>
-                        <img src="img/galeria/11.jpg" style="width:100%">
+                        <img src="img/galeria/pedicure/9.jpg" style="width:100%">
                     </div>
-
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+                    <a class="next photo-9" onclick="plusSlides(1)">&#10095;</a>
                     <!-- Image text -->
                     <!-- <div class="caption-container">
                         <p id="caption"></p>
                       </div> -->
-
                     <!-- Thumbnail images -->
                     <div class="nav_gallery">
-
-
-
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(1)"
+                            <img class="demo cursor" src="img/galeria/pedicure/1.jpg" ontouchstart="currentSlide(1)"
                                 onmouseenter="currentSlide(1)" alt="The Woods">
                         </div>
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(2)"
+                            <img class="demo cursor" src="img/galeria/pedicure/2.jpg" ontouchstart="currentSlide(2)"
                                 onmouseenter="currentSlide(2)" alt="Cinque Terre">
                         </div>
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(3)"
+                            <img class="demo cursor" src="img/galeria/pedicure/3.jpg" ontouchstart="currentSlide(3)"
                                 onmouseenter="currentSlide(3)" alt="Mountains and fjords">
                         </div>
-
-
-
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(4)"
+                            <img class="demo cursor" src="img/galeria/pedicure/4.jpg" ontouchstart="currentSlide(4)"
                                 onmouseenter="currentSlide(4)" alt="Northern Lights">
                         </div>
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(5)"
+                            <img class="demo cursor" src="img/galeria/pedicure/5.jpg" ontouchstart="currentSlide(5)"
                                 onmouseenter="currentSlide(5)" alt="Nature and sunrise">
                         </div>
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(6)"
+                            <img class="demo cursor" src="img/galeria/pedicure/6.jpg" ontouchstart="currentSlide(6)"
                                 onmouseenter="currentSlide(6)" alt="Snowy Mountains">
                         </div>
-
-
-
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(7)"
+                            <img class="demo cursor" src="img/galeria/pedicure/7.jpg" ontouchstart="currentSlide(7)"
                                 onmouseenter="currentSlide(7)" alt="Northern Lights">
                         </div>
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/22t.jpg" ontouchstart="currentSlide(8)"
+                            <img class="demo cursor" src="img/galeria/pedicure/8.jpg" ontouchstart="currentSlide(8)"
                                 onmouseenter="currentSlide(8)" alt="Nature and sunrise">
                         </div>
                         <div class="column_flex">
-                            <img class="demo cursor" src="img/galeria/11t.jpg" ontouchstart="currentSlide(9)"
+                            <img class="demo cursor" src="img/galeria/pedicure/9.jpg" ontouchstart="currentSlide(9)"
                                 onmouseenter="currentSlide(9)" alt="Snowy Mountains">
                         </div>
+
                     </div>
                 </div>
             </div>
-        </section><!-- /section-->
-
-
-
-
-
-
-
+        </section><!-- /section gallery-->
     </main>
-
-
     <!-- FOOTER -->
-
-
-
-
-
     <footer id="kontakt" class="foot">
         <div class="container">
             <div class="row row-flex one_high">
                 <section class="col-md-3">
 
                     <article class="footer_box">
-                        <header class="color_header color_high">SKONTAKTUJ SIĘ Z PAINTBOX</header>
+                        <header class="color_header color_high">SKONTAKTUJ SIĘ Z NAMI</header>
                         <div class="footer_box_main">
                             <!-- <p>ZADZWOŃ 22 258 48 48</p> -->
-                            <p> <i class="fa fa-phone fa-1x"></i>
-                                <a href="tel:222584444">22 258 44 44</a></p>
-                            <p><i class="fa fa-envelope fa-1x"></i>recepcja@paintbox.pl</p>
+                            <a href="tel:222584444"> <i class="fa fa-phone fa-1x"></i>
+                                22 258 44 44</a>
+                            <a href="mailto:recepcja@paintbox.pl"><i
+                                    class="fa fa-envelope fa-1x"></i>recepcja@paintbox.pl</a>
 
-                            <p><i class="fa fa-facebook fa-1x"></i>Napisz do nas</p>
+                            <a target="_blank" href="https://www.facebook.com/PaintBoxNailBar/">
+                                <span class="img_footer"> <img src="img/messenger.svg" alt=""></span> Napisz do nas
+                            </a>
                             <p><i class="fa fa-flag fa-1x roz"></i>WE SPEAK ENGLISH</p>
                         </div>
                     </article>
                     <article class="footer_box">
-                        <header class="color_header color_normal">POLUB PAINTBOX</header>
+                        <header class="color_header color_normal">POLUB NAS</header>
                         <div class="footer_box_main">
-                            <p><i class="fa fa-facebook-square fa-1x"></i>PaintBoxNailBar</p>
-                            <p><i class="fa fa-instagram fa-1x"></i>PaintBoxNailBar</p>
+                            <a target="_blank" href="https://www.facebook.com/PaintBoxNailBar/"><i
+                                    class="fa fa-facebook-square fa-1x"></i>PaintBoxNailBar</a>
+                            <a target="_blank" href="https://instagram.com/paintboxnailbar/"><i
+                                    class="fa fa-instagram fa-1x"></i>PaintBoxNailBar</a>
                         </div>
                     </article>
-
                 </section>
                 <section class="col-md-3">
 
@@ -446,13 +358,11 @@
                         <div class="footer_box_main">
 
                             <p><i class="fa fa-map-marker fa-1x"></i>ul. Kazachska 1</p>
-                            <p class="adress">wejście od XXX</p>
-                            <p class="adress">Warszawa Wilanów</p>
+                            <p class="adress">wejście od Kieślowskiego</p>
+                            <p class="adress">02-999 Warszawa (Wilanów)</p>
 
                             <p><i class="fa fa-car fa-1x roz"></i>Prywatny parking</p>
                         </div>
-
-
                     </article>
                     <article class="footer_box">
                         <header class="color_header color_high">GODZINY PRACY</header>
@@ -462,54 +372,73 @@
                             <p><i class="fa fa-calendar-o fa-1x roz"></i>Niedziela 10-18</p>
                         </div>
                     </article>
-
                 </section>
-
                 <section class="col-md-5">
                     <article class="footer_box footer_box_map">
                         <!-- <img src="img/mapa.jpg" alt=""> -->
-
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9789.9746686064!2d21.0804293!3d52.1617173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16803e62cb83e7d2!2sPaintBox%20Nail%20Bar!5e0!3m2!1spl!2spl!4v1575042639151!5m2!1spl!2spl"
                             frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-
-
                         <!-- <iframe
-                                src="https://www.google.com/maps/d/u/1/embed?mid=19vDphXo9nm8F2zgdK6Glha0sONOFL-EL"></iframe> -->
-
+                            src="https://www.google.com/maps/d/u/1/embed?mid=19vDphXo9nm8F2zgdK6Glha0sONOFL-EL"></iframe> -->
                     </article>
                 </section>
-
-
-
             </div>
-
-
-
         </div>
-        <div class="bg_cherry">
+        <div class="footer__copy-text bg_cherry">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 color_header">
-                        <p> Polityka prywatności | Regulamin | © 2015-2019 Paintbox | Made with <i
-                                class="fa fa-heart fa-1x"></i>
+                        <p> <a target="_blank" href="polityka_prywatnosci.html">Polityka prywatności</a>
+
+                            | <a target="_blank" href="regulamin.html">Regulamin</a> | © 2015-2019 Paintbox | Made with
+                            <i class="fa fa-heart fa-1x"></i>
                             by
                             Pananet </p>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- <div class="col-md-12">
-           <p class="pull-right"><a href="#">Powrót na górę...</a></p>
-          <p>&copy; 2015 PaintBox &middot; Nailbar &middot; Warszawa &middot; Wilanów &middot; <a
-              href="polityka_prywatnosci.pdf" target="_blank">Polityka prywatności</a></p>
-        </div> -->
+       <p class="pull-right"><a href="#">Powrót na górę...</a></p>
+      <p>&copy; 2015 PaintBox &middot; Nailbar &middot; Warszawa &middot; Wilanów &middot; <a
+          href="polityka_prywatnosci.pdf" target="_blank">Polityka prywatności</a></p>
+    </div> -->
 
     </footer> <!-- /FOOTER -->
 
-
+    <!-- umow wizyte popup -->
+    <div id="popup" class="popup hide">
+        <div class="popup_content">
+            <p>Zadzwoń i umów wizytę</p>
+            <a class="roz" href="tel:222584444">22 258 44 44</a>
+            <p><span>lub zostaw swoje dane a oddzwonimy</span> </p>
+            <form class="was-validated" action="form.php" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Imię</label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Imię (opcjonalnie)"
+                        name="imie">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPhone1">Numer telefonu</label>
+                    <input type="tel" class="form-control" id="exampleInputPhone1" aria-describedby="phoneHelp"
+                        placeholder="Wpisz numer telefonu" name="telefon" required>
+                    <small id="emailHelp" class="form-text text-muted">...</small>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">
+                        <small>Chcę aby pracownik Paintbox skontatkowałsię ze mną w celu umówienia wizyty.</small>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-roz">Wyślij</button>
+            </form>
+        </div>
+        <!-- <button class="btn-roz btn-corner" onclick="umowwizyte()"> <span>x</span> </button> -->
+        <button type="button" class="close btn-corner" aria-label="Close" onclick="umowwizyte()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> <!-- umow wizyte popup -->
 
 
 
@@ -528,10 +457,6 @@
         });
     </script>
     <script src="js/paintbox.js"></script>
-
-
-
-
 </body>
 
 </html>

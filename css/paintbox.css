@@ -58,7 +58,10 @@ a:focus, a:hover {
 
 img, iframe {width:100%}
 
-
+.h1, h1{
+  font-size: 5rem;
+  
+  }
 
 .h2, h2{
 font-size: 3rem;
@@ -121,8 +124,19 @@ text-align:center;
 /* margin:20px; */
 width:100%;
 height: 100vh;
-
 }
+.popup:before{
+  /* content: "";
+  position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: red;
+    z-index: 3; */
+}
+
+
 .popup_content{
   position: absolute;
 width:80%;
@@ -165,9 +179,11 @@ font-size:2.5rem;
   background-color: #F7F4ED; */
 /* } */}
 
-.carousel h1 {
-  font-size: 48px;
+
+.carousel h2 {
+  font-size: 5rem;
   font-weight: 300;
+  margin:0;
 }
 .carousel-caption {
 
@@ -208,19 +224,33 @@ font-size:2.5rem;
 }
 
 .carousel_span {
-  font-size: 48px;
+  font-size: 5rem;
   display:block;
 } 
 
 .carousel-image img {
-  width: 100%;
-  border-bottom: 1px solid var(--main-color-high);
+  /* width: 100%;
+  border-bottom: 1px solid var(--main-color-high); */
+  border-bottom: 1px solid transparent;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-image: linear-gradient(to right, transparent 0%, var(--main-color-normal) 10%,var(--main-color-normal) 90%, transparent 100%);
+  border-image-slice: 1;
+
+
+
 
 }
 
 .carousel-cta {
   text-align: center;
   margin: 40px 0;
+}
+
+.carousel-cta h1 {
+  margin:0;
+  font-weight: 300;
 }
 
 
@@ -371,15 +401,15 @@ li.zolty a, .zolty {
 }
 
 .navbar-toggle {
-  border-color: #ddd;
-  background-color: #ddd;
+  border-color: var(--main-color-normal);
+  background-color: var(--main-color-normal);
 }
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
   border-radius: 1px;
-  background-color: #888;
+  background-color: white;
 }
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
@@ -862,9 +892,20 @@ tr > td:first-child {
 .manicure_opi{background-image:url(../img/box/manicure/opi.jpg );}
 .manicure_mala_estetka{background-image:url(../img/box/manicure/mala_estetka.jpg );}
 
+.pedicure_hybrydowy{background-image:url(../img/box/pedicure/hybrydowy.jpg );}
+.pedicure_spa{background-image:url(../img/box/pedicure/spa.jpg );}
+.pedicure_klasyczny{background-image:url(../img/box/pedicure/klasyczny.jpg );}
+.pedicure_japonski{background-image:url(../img/box/pedicure/japonski.jpg );}
+.pedicure_opi{background-image:url(../img/box/pedicure/opi.jpg );}
+.pedicure_leczniczy{background-image:url(../img/box/pedicure/leczniczy.jpg );}
 
-.services_box_top h2{
-  font-size: 20px;
+.metoda_1_1{background-image:url(../img/box/rzesy-i-brwi/1_1.jpg );}
+.metoda_2_2{background-image:url(../img/box/rzesy-i-brwi/2_2.jpg );}
+
+
+
+.services_box_top h3{
+  font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   width: 100%;
@@ -903,29 +944,43 @@ border: none;
 
 .services, .pricelist {
   /* border-right: 4px solid var(--main-color-normal); */
+position: relative;
+}
 
+.pricelist_brand{
+  position: sticky;
+  top: 10vh;
+  right: 0;
+  padding-top: 25px;
+
+}
+.brand_img img{
+height: auto;
+width:100%;
+margin: 0 auto;
+display: block;
 }
 
 .bg_dark{
   background-color: var(--bg-color-dark);
   color: var(--font-color-dark);
   }
-  
-  .bg_light{
+
+.bg_light{
     background-color: white;
     color: black;
-    background-image: url("http://getwallpapers.com/wallpaper/full/a/b/e/272679.jpg");
+    background-image: url("../img/bg_light.png");
     background-attachment: fixed;
     background-size: cover;
     }
 
-    .bg_light2{
+    /* .bg_light2{
       background-color: white;
       color: black;
       background-image: url(../img/polish2.jpg);
       background-attachment: fixed;
       background-size: cover;
-      }
+      } */
 
 .bg_cherry {
   /* padding: 20px 0; */
@@ -945,9 +1000,22 @@ border: none;
   padding: 20px 0;
   background: var(--main-color-high);
   color: white;
-  
 }
 
+.contact_map{
+  position: relative;
+ height:70vh;
+ margin:0;
+ padding: 0;
+}
+
+.contact_map iframe{
+  position: absolute;
+  height:70vh;}
+
+/* .contact {padding:0;} */
+
+/* footer css */
 .footer_box{
 margin: 20px 0px
 
@@ -1120,13 +1188,16 @@ margin: 20px 0px
   }
   /* pb */
 
-
+  .brand_img img{
+    height: 20vh;
+width:auto;
+    }
  
 
-  .carousel h1 {
+  /* .carousel h2 {
     font-size: 60px;
     font-weight: 300;
-  }
+  } */
 
   .carousel-image img {
 
@@ -1192,12 +1263,12 @@ width:133%;
 }  
 
 .popup{
-  width:70%;
+  width:90%;
   height: 100%;
 }
 
 .popup_content{
- 
+ width:50%;
 }
 
  
