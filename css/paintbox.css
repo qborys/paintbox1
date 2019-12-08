@@ -1459,7 +1459,7 @@ overflow: hidden;}
 
 
 .btn.focus,.btn:focus, .btn:active {
-  color:white;
+  /* color:white; */
   text-decoration: none;
   outline: 0;
 }
@@ -1467,16 +1467,13 @@ overflow: hidden;}
 
 .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
   background-image: none;
-  background-color: var(--main-color-normal);
-border:solid 2px var(--main-color-normal);
+ 
 }
 .btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
-  background-color: var(--main-color-normal);
   border:none;
 }
 .btn-roz .badge {
-  color: var(--main-color-normal);
-  background-color: #FFFFFF;
+
 }
 
 /* bialy */
@@ -1670,3 +1667,5 @@ fieldset[disabled] .btn-zolty-odcien.active {
   outline: none;
 }
 
+.btn{border-radius:15px}
+.btn-lg{border-radius:20px;}
