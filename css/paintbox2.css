@@ -2,51 +2,168 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+
+:root {
+  --main-color-normal: #EE287C;
+  --main-color-high: #B60050;
+  --main-color-low: #FF67AB;
+  --main-color-transparent:rgba(182, 0, 79, 0.05);
+  --second-color-normal: #803E98;
+  /* dark section */
+  --bg-color-dark: black;
+  --font-color-dark: white;
+  --border-radius-img: 10%;
+}
+#map {
+  height: 100%;
+}
+
+.color_low, .color_normal,.color_high{
+  color:white;
+}
+
+.color_low{
+  background-color: var(--main-color-low);  
+}
+.color_normal{
+  background-color: var(--main-color-normal);
+}
+.color_high{
+  background-color: var(--main-color-high);
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
   font-family: 'Signika', sans-serif;
+  font-weight: 300;
 }
+
+p{
+  margin: 10px;
+  font-size:1.6rem;
+}
+
+
+a{
+  color: var(--main-color-normal);
+}
+a:focus, a:hover {
+  text-decoration: none;
+  color:var(--main-color-high)
+}
+
+img, iframe {width:100%}
+
+
+
+.h2, h2{
+font-size: 3rem;
+
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;}
+  
+  .big_txt{
+    font-size:1.8rem;
+   
+    }
+
+    section{
+      padding:10px 0;
+      }
+
+
 footer {
-  margin-top: 60px;
+  padding-top: 20px;
+  color:white;
+  background-color: black;
 }
+.fa{
+
+  /* font-size:1.6rem; */
+  /* margin-right:10px */
+}
+
+
+.fa-1x{
+width: 30px;
+text-align: center;}
+
+.table {
+  margin-bottom: 0px;
+}
+
+.popup{
+z-index:4;
+position:fixed;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+/* right:0;
+bottom:0; */
+background-color: black;
+color: white;
+text-align:center;
+/* margin:20px; */
+width:100%;
+height: 100vh;
+
+}
+.popup_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.popup_content a {
+  font-size:2.5rem;
+  font-weight: bold;
+  }
+
+.popup_content p {
+font-size:2.5rem;
+}
+
+.popup_content p span {
+  font-size:1.5rem;
+  }
+  
+
 .first-slide {
-  background-image: url(../img/galeria/galeria_3.jpg);
-  background-size: cover;
-  background-position: 0% 70%;
-  height: 100%;
+
 }
 .second-slide {
-  background-image: url(../img/paintbox_swieta_cover.jpg);
-  /*background-size: 1200px;*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 16%;
-  height: 100%;
-  background-color: #F7F4ED;
+
 }
+
+
+
 .third-slide {
-  background-image: url(../img/paintbox_henna_top.jpg);
+  /* background-image: url(../img/paintbox_henna_top.jpg);
   /*background-size: 1200px;*/
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 65%;
   height: 100%;
-  background-color: #F7F4ED;
-}
+  background-color: #F7F4ED; */
+/* } */}
 
 .carousel h1 {
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 300;
 }
 .carousel-caption {
-  margin-bottom: 60px;
+
 }
 .carousel a:hover {
   text-decoration: none;
-}
-
-.carousel-caption h1.bialy {
-  text-shadow: 0 2px 9px rgba(50,0,0,.9);
 }
 
 .smaller-text {
@@ -57,6 +174,157 @@ footer {
   position: relative;
   overflow: hidden;
 }
+/* PB*/
+.carousel-control.left{
+  background-image:none;
+}
+.carousel-control.right{
+  background-image:none;
+}
+
+.row-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.pricelist .row-flex{
+  align-items: flex-start;
+}
+
+.one_high{
+  align-items: stretch;
+}
+
+.carousel_span {
+  font-size: 48px;
+  display:block;
+} 
+
+.carousel-image img {
+  width: 100%;
+  border-bottom: 1px solid var(--main-color-high);
+
+}
+
+.carousel-cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+  .carousel-indicators {
+    bottom: -35px;}
+
+
+    /* pbw3 */
+/* Position the image container (needed to position the left and right arrows) */
+.container_gallery {
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  /* background: black; */
+  margin:20px 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  width:100%;
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.container_gallery .prev,
+.container_gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  /* margin-top: -50px; */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.container_gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.container_gallery .prev:hover,
+.container_gallery .next:hover {
+  background-color:var(--main-color-normal);
+}
+a.next:hover, a.prev:hover {
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.column_flex:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column_flex {
+  width:30%;
+  flex-grow: 1;
+}
+.column_flex img {
+  width: 100%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.nav_gallery
+{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -67,7 +335,7 @@ li.turkus a, .turkus {
   color: #01AAAD;
 }
 li.roz a, .roz {
-  color: #ED207B;
+  color: var(--main-color-normal);
 }
 li.zolty a, .zolty {
   color: #777;
@@ -106,12 +374,13 @@ li.zolty a, .zolty {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 .navbar-wrapper {
-  position: absolute;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
-  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.1);
 }
 
 .paintboxlogo {
@@ -125,7 +394,7 @@ li.zolty a, .zolty {
   color: #000000;
 }
 .smalllogo img {
-  width: 200px;
+  width: 150px;
 }
 /* Flip around the padding for proper display in narrow viewports */
 
@@ -144,23 +413,65 @@ li.zolty a, .zolty {
   margin-top: 10px;
 }
 
+/* PB */
+.contact_menu{
+display:none;
+float:right;
+color: var(--main-color-normal);
+font-size: 16px;
+line-height: 40px;
+}
+
+.contact_menu p{
+  float:left;  
+}
+.contact_menu img{
+  width: 40px;
+  margin: 10px 5px;
+  border: solid var(--main-color-normal) 3px;
+  border-radius: 50%;
+}
+
+
+.nav>li>a:hover {
+ background-color: var(--main-color-normal);
+ color: white;
+ transition:.2s;
+
+}
+.nav>li>a:hover.fb, .nav>li>a:hover.in{
+  background-color: transparent;
+  color:var(--main-color-normal);
+}
+.navbar {
+  margin-bottom: 5px;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 
 .carousel {
-  height: 500px;
+  /* height: 560px; */
 }
 /* Since positioning the image, we need to help out the caption */
 
 .carousel-caption {
-  z-index: 10;
+  z-index: 2;
+  width:40%;
+  margin-bottom: 60px;
+  top:50%;
+  left: unset;
+  right: 5%;
+  bottom:unset;
+  padding-bottom:0;
+  transform: translate(0,-70%);
+  text-shadow: unset;
 }
 /* Declare heights because of positioning of img element */
 
 .carousel .item {
-  height: 500px;
-  background-color: #777;
+  height: 100%;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -169,21 +480,58 @@ li.zolty a, .zolty {
   min-width: 100%;
   height: 500px;
 }
+/* pb */
+
+
+
+
+.section_img  {
+/* text-align: center; */
+padding: 20px;  
+}
+.section_img img {
+border-radius: var(--border-radius-img);
+width:100%;
+}
+
+.spa_txt{
+  margin-top:10px;
+
+}
+
+
+
+.team_img img{
+  width:100%;
+  padding-top:10px;
+}
+
+.testimonial_img{
+  padding: 20px;
+
+}
+.testimonial_img img{
+  border-radius: var(--border-radius-img);
+  width: 100%;
+}
+
+.testimonial_txt {text-align:center}
+
+
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
 
 .marketing .col-lg-4, .col-lg-6, .homepage .col-md-6 {
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 .marketing h2 {
   font-weight: normal;
 }
 .marketing .col-lg-4 p, .marketing .col-lg-6 p, .homepage .col-md-6 p {
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .marketing .uslugi .col-md-7 p {
@@ -216,6 +564,16 @@ li.zolty a, .zolty {
   margin: 30px 0;
   /* Space out the Bootstrap <hr> more */
 }
+
+.featurette {
+  
+  padding-top:20px;
+  padding-bottom:20px;
+
+
+}
+
+
 /* Thin out the marketing headings */
 
 .featurette-heading {
@@ -282,7 +640,7 @@ div.pakiet .desc {
 
 table tr td:last-child, table tr th:last-child, 
 table tr td:nth-last-child(2), table tr th:nth-last-child(2) {
-  text-align: right;
+  text-align: left;
   font-size: 13px;
 }
 table tr td:last-child {
@@ -381,6 +739,236 @@ div.thx {
 }
 
 
+/* pb */
+
+.alert_frame{
+margin:40px 0px 20px;
+background-color: var(--main-color-high);
+
+
+}
+
+.alert_frame p{
+color:white;
+font-size: 22px;
+line-height: 60px;
+text-transform: uppercase;
+text-align: center;
+margin:0;
+}
+
+thead tr {
+  /* background: var(--main-color-high);
+  color:white;
+  border-radius: 10px 10px 0 0; */
+ 
+}
+
+.table-hover-normal thead tr {
+  background: var(--main-color-normal);
+ 
+ 
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+  background-color:var(--main-color-transparent);
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color:transparent;
+}
+
+.table-hover-dark>tbody>tr:hover {
+  background-color: var(--main-color-high);
+  color:white;
+}
+
+.table-hover-normal>tbody>tr:hover {
+  background-color: var(--main-color-normal);
+  color:white;
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  /* padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top; */
+  border-top: none;
+}
+
+.table>thead>tr>th {
+  /* vertical-align: bottom; */
+  border-bottom: none;
+}
+
+tr > td:first-child {
+  width: 100%;
+}
+
+/* MANICURE PAGE */
+
+
+
+
+.services_box {
+
+  margin: 20px;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  padding:0;
+  transition:.4s;
+  color: white;
+}
+
+.services_box:hover .services_box_top{
+
+
+
+
+}
+
+
+.services_box_top{
+  flex-basis:200px;
+  border-radius: 10px 10px 0 0;
+  background-image:url(../img/manicure_box.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: flex-end;
+  flex-grow:1;
+  transition:.4s;
+
+}
+
+.services_box_top h2{
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.services_box_bottom{
+  /* height:50%; */
+  border-radius: 0 0 10px 10px;
+  background-color:var(--main-color-normal);
+  padding:20px 20px;
+}
+
+.services_box_bottom p{
+  /* height:50%; */
+  margin:0;
+}
+
+
+.main_color_high{ 
+  background-color:var(--main-color-high);
+}
+
+
+hr.interval{
+margin:40px 0;
+border: none;
+
+}
+
+
+.services, .pricelist {
+  /* border-right: 4px solid var(--main-color-normal); */
+
+}
+
+.bg_dark{
+  background-color: var(--bg-color-dark);
+  color: var(--font-color-dark);
+  }
+  
+  .bg_light{
+    background-color: white;
+    color: black;
+    background-image: url("http://getwallpapers.com/wallpaper/full/a/b/e/272679.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+    .bg_light2{
+      background-color: white;
+      color: black;
+      background-image: url(../img/polish2.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      }
+
+.bg_cherry {
+  /* padding: 20px 0; */
+  /* border-left: 4px solid var(--main-color-normal); */
+  /* background: #FCDEEB; */
+  /* background: var(--main-color-normal);
+  color: white;} */
+  background-image: url(../img/polish.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color:white;
+}
+
+.description_pricelist {
+  padding: 20px 0;
+  background: var(--main-color-high);
+  color: white;
+  
+}
+
+.footer_box{
+margin: 20px 0px
+
+}
+
+.footer_box_map{
+  margin: 20px 0
+}
+
+
+.footer_box_map iframe {
+  height: 320px;
+}
+
+
+.color_header{
+  line-height:4rem;
+  text-align: center;
+  }
+
+  .footer_box_main{
+
+/* padding: 5px 20px; */
+
+  }
+
+
+  .footer_box_main img {
+    border: solid var(--main-color-normal) 3px;
+    border-radius: var(--border-radius-img);
+    width:30px;
+    margin-right:10px
+  }
+  .footer_box_main a {
+    color:white;
+    font-size:1.6rem;
+  }
+
+  .adress {
+    margin-left:40px;
+  }
+/* 
+  .container {
+    padding: 20px;;
+  } */
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media only screen and (max-device-width: 1024px) and (orientation: portrait) {
@@ -390,10 +978,14 @@ div.thx {
 }
 
 @media (min-width: 768px) {
+
+  section{
+    padding:40px 0;
+    }
   /* Navbar positioning foo */
 
   .navbar-wrapper {
-    margin-top: 100px;
+    /* padding-top: 100px; */
   }
   .navbar-wrapper .container {
     /*padding-right: 15px;*/
@@ -422,20 +1014,18 @@ div.thx {
     font-size: 50px;
   }
   .featurette-divider {
-    margin: 80px 0;
+    margin: 40px 0;
     /* Space out the Bootstrap <hr> more */
   }
   .navbar-brand {
-    margin-top: -95px;
+    margin-top: -70px;
   }
   .paintboxlogo {
-    width: 200px;
-    margin: 0 auto;
+    width: 150px;
     display: block;
   }
   .paintboxlogo img {
-    width: 200px;
-    height: 200px;
+ 
   }
   .smalllogo {
     display: none;
@@ -489,23 +1079,99 @@ div.thx {
   .celebrity-second-row {
    margin-top: 100px;
   }
+  /* pb */
+
+
+ 
+
+  .carousel h1 {
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  .carousel-image img {
+
+    border-bottom: none;}
+
+  .row-flex{
+    flex-direction: row;
+  }
+  .flex-reverse{
+    flex-direction: row-reverse;
+  }
+  .section_img  {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .contact_menu{
+      display:block;
+      font-size: 25px;
+      line-height: 60px;
+      font-weight: bold;
+      }
+
+      .contact_menu img{
+
+        width: 40px;
+        margin: 10px 5px;}
+
+    .container_gallery {
+        flex-direction: row;
+      }
+  
+      .container_gallery .prev,
+      .container_gallery .next {     
+    /* display:none; */
+    top: 50%;
+    transform: translate(0%,-50%);
 }
+
+.container_gallery .next {
+  right: 50%;
+      }
+
+.footer_box {
+        /* margin: 20px 30px; */
+    }
+
+.one_high {
+      padding: 0 20px;  
+}  
+
+.popup{
+  width:70%;
+  height: 100%;
+}
+
+ 
+.popup_content p, .popup_content a {
+
+  font-size:4rem;
+  }
+  
+  .popup_content p span {
+  
+    font-size:2rem;
+    }
+
+
+}
+
 
 @media (min-width: 992px) {
   .navbar-brand {
-    margin-top: -115px;
+    margin-top: -70px;
   }
   .navbar-wrapper .container {
     width: 100%;
   }
   .paintboxlogo {
-    width: 250px;
-    margin: 0 auto;
+    width: 150px;
     display: block;
   }
   .paintboxlogo img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 1170px) {
@@ -514,6 +1180,34 @@ div.thx {
   }
 }
 /**************** BUTTONS *****************/
+
+.btn-corner{
+  position: absolute;
+  margin:20px;
+  top:0;
+  right:0;
+  font-size:40px;
+  /* width: 40px;
+  height:40px;
+  
+  line-height: 25px; */
+  }
+  .btn-corner span {
+  
+  }
+
+  .close {
+    color: #fff; 
+    opacity: 1;
+  }
+  
+  .close:focus, .close:hover{
+    color:var(--main-color-normal);
+  opacity:1}
+
+
+
+.btn-more{margin: 30px 10px;}
 
 .btn-zolty {
   color: #FFFFFF;
@@ -586,23 +1280,35 @@ div.thx {
 
 .btn-roz {
   color: #FFFFFF;
-  background-color: #ED207B;
-  border-color: #FFFFFF;
+  background-color: var(--main-color-normal);
+  border:2px solid var(--main-color-normal);; 
+  transition:.2s;
+
 }
-.btn-roz:hover, .btn-roz:focus, .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
+.btn-roz:hover {
   color: #FFFFFF;
-  background-color: #ED20B6;
-  border-color: #FFFFFF;
+  background-color: #000;
+  border:solid 2px var(--main-color-normal);
+  outline:none;
 }
+
+.btn.focus, .btn:focus, .btn:hover {
+  color:white;
+  text-decoration: none;
+}
+
+
 .btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
   background-image: none;
+  background-color: var(--main-color-normal);
+border:solid 2px var(--main-color-normal);
 }
 .btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
-  background-color: #ED207B;
-  border-color: #FFFFFF;
+  background-color: var(--main-color-normal);
+  border:none;
 }
 .btn-roz .badge {
-  color: #ED207B;
+  color: var(--main-color-normal);
   background-color: #FFFFFF;
 }
 
