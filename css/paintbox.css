@@ -1078,6 +1078,51 @@ margin: 20px 0px
   .adress {
     margin-left:40px;
   }
+
+/* roz */
+
+.btn-roz {
+  color: #FFFFFF;
+  position: relative;
+  background-color: var(--main-color-normal);
+  border:none; 
+  transition:.5s ;
+overflow:hidden;
+}
+
+ 
+
+
+
+.btn-roz:hover {
+  color: var(--main-color-high);
+  background-color: white;
+  border:none;
+  outline:none;
+}
+
+
+
+.btn.focus,.btn:focus, .btn:active {
+  /* color:white; */
+  text-decoration: none;
+  outline: 0;
+}
+
+
+.btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
+  background-image: none;
+ 
+}
+.btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
+  border:none;
+}
+.btn-roz .badge {
+
+}
+
+
+
 /* 
   .container {
     padding: 20px;;
@@ -1292,6 +1337,24 @@ width:133%;
     }
 
 
+
+    .btn-roz:after{ content: "";
+      position: absolute;
+      width:40px;
+      top:0;
+      bottom:0;
+      background-image:linear-gradient(90deg,transparent 0%,white 50%,white 50%,transparent 100%) ;
+      transition:.5s;
+      padding: 10px 16px;
+      transform: translate(-200px,0px);
+      border-radius:20px;
+  
+  }
+  .btn-roz:hover:after {
+    transform: translate(100px,0px)
+  }
+
+
 }
 
 
@@ -1414,59 +1477,7 @@ width:133%;
   color: #7F3E98;
   background-color: #FFFFFF;
 }
-/* roz */
 
-.btn-roz {
-  color: #FFFFFF;
-  position: relative;
-  background-color: var(--main-color-normal);
-  border:none; 
-  transition:.5s ;
-overflow: hidden;
-}
-
-  .btn-roz:after{ content: "";
-    position: absolute;
-    width:40px;
-    top:0;
-    bottom:0;
-    background-image:linear-gradient(90deg,transparent 0%,white 50%,white 50%,transparent 100%) ;
-    transition:.5s;
-    padding: 10px 16px;
-    transform: translate(-200px,0px);
-    border-radius:20px;
-
-}
-.btn-roz:hover {
-  color: var(--main-color-high);
-  background-color: white;
-  border:none;
-  outline:none;
-}
-
-.btn-roz:hover:after {
-  transform: translate(100px,0px)
-
-}
-
-
-.btn.focus,.btn:focus, .btn:active {
-  /* color:white; */
-  text-decoration: none;
-  outline: 0;
-}
-
-
-.btn-roz:active, .btn-roz.active, .open .dropdown-toggle.btn-roz {
-  background-image: none;
- 
-}
-.btn-roz.disabled, .btn-roz[disabled], fieldset[disabled] .btn-roz, .btn-roz.disabled:hover, .btn-roz[disabled]:hover, fieldset[disabled] .btn-roz:hover, .btn-roz.disabled:focus, .btn-roz[disabled]:focus, fieldset[disabled] .btn-roz:focus, .btn-roz.disabled:active, .btn-roz[disabled]:active, fieldset[disabled] .btn-roz:active, .btn-roz.disabled.active, .btn-roz[disabled].active, fieldset[disabled] .btn-roz.active {
-  border:none;
-}
-.btn-roz .badge {
-
-}
 
 /* bialy */
 .btn-bialy { 
